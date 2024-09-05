@@ -3,6 +3,9 @@
  
 :root {
 
+    --transition-time: all 0.2s;
+    --container-padding: 1.4rem;
+
     /*Colors*/
 
     --clr-Gray900: #0B0F19;
@@ -10,7 +13,9 @@
     --clr-Gray700: #565973;
     --clr-Gray600: #9397AD;
     --clr-White: #ffffff;
-    --clr-Primary: #6366F1;
+    --clr-Primary: #6467f2;
+    --clr-Primary-hover: hsl(239, 85%, 64%);
+    --clr-Primary-active: hsl(239, 85%, 70%);
     --clr-Success: #22C55E;
 
     /*Font Weights*/
@@ -25,153 +30,371 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
 body {
-    background-color: darkslateblue;
     font-family: "Manrope", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    padding-inline: var(--container-padding);
+    margin-inline: auto;
 }
 
     /*Font styling*/
 
 h1 {
     color: var(--clr-Gray900);
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: var(--font-weight-ExtraBold);
     }
 
 h2 {
     color: var(--clr-Gray900);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: var(--font-weight-ExtraBold);
 }
 
 h3 {
     color: var(--clr-Gray900);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: var(--font-weight-ExtraBold);
 }
 
 h4 {
     color: var(--clr-Gray900);
-    font-size: 24;
+    font-size: 1.5rem;
     font-weight: var(--font-weight-ExtraBold);
 }
 
 h5 {
     color: var(--clr-Gray900);
-    font-size: 20;
+    font-size: 1.25rem;
     font-weight: var(--font-weight-ExtraBold);
 }
 
 .font-style-1 {
     color: var(--clr-Gray600);
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: var(--font-weight-Regular);
 }
 
 .font-style-2 {
     color: var(--clr-Gray900);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-Bold);
 }
 
 .font-style-3 {
     color: var(--clr-Gray900);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-4 {
     color: var(--clr-Gray700);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: var(--font-weight-Regular);
 }
 
 .font-style-5 {
-    color: var(--clr-Gray700);
-    font-size: 16px;
+    color: #131022;
+    font-size: 1rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-6 {
     color: var(--clr-Gray800);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-7 {
     color: var(--clr-Gray700);
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: var(--font-weight-Regular);
 }
 
 .font-style-8 {
     color: var(--clr-Gray700);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-Regular);
 }
 
 .font-style-9 {
     color: var(--clr-White);
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-10 {
     color: var(--clr-White);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-11 {
     color: var(--clr-Primary);
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-12 {
     color: var(--clr-Success);
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: var(--font-weight-SemiBold);
 }
 
 .font-style-13 {
     color: var(--clr-Gray600);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: var(--font-weight-Regular);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    
 }
 
 /* Utility Classes */
 
-.round-button {
+/*Round buttons*/
+
+.round-button-large {
     width: 2.75rem;
     height: 2.75rem;
+}
+
+.round-button-small {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.round-button-properties {
     background-color: var(--clr-White);
     border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+}
+
+.round-button-properties:hover {
+    background-color: hsl(0, 0%, 96%);
+}
+
+.round-button-properties:active {
+    background-color: var(--clr-White);
+}
+
+#round-button-page1 {
+    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+        height: 0.5rem;
+        width: auto;
+    }
+}
+
+/*Primary button*/
+
+.primary-button {
+    background-color: var(--clr-Primary);
+    border-radius: 4px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    background-color: var(--clr-Primary-hover);
+}
+
+.primary-button:active {
+    background-color: var(--clr-Primary-active);
+}
+
+.primary-button img {
+    margin-right: .5rem;
+}
+
+#id-sign-in {
+    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+        height: 1.125rem;
+        width: auto;
+    }
+}
+
+/*Logotype*/
+
+#logotype {
+    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+        height: 2.75rem;
+        width: auto;
+    }
+}
+
+/*Features button*/
+
+.navigation-features {
+    display: none;
+}
+
+.nav-link:hover {
+    color: var(--clr-Primary);
+}
+
+.nav-link:active {
+    color: var(--clr-Primary-active);
+}
+
+
+/*Dark Mode Toggle Switch Start*/
+
+.btn-toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    
+    .label {
+        display: none;
+    }
+}
+
+.toggle-switch {
+    position: relative;
     display: inline-block;
-    cursor: pointer;
-    border: black solid 1px;
+    width: 45px;
+    height: 25px;
+    
+    input {
+        opacity: 0;
+    }
+    
+    input:checked + .slider {
+        background-color: var(--clr-Primary);
+    }
+    
+    input:focus + .slider {
+        box-shadow: 0 0 1px var(--clr-Primary);
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(18px);
+        background-color: var(--clr-White);
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--clr-Gray600);
+        transition: var(--transition-time);
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        bottom: 2.5px;
+        left: 3px;
+        background-color: var(--clr-White);
+    }
+    
+    .slider.round {
+        border-radius: 35px;
+    }
+    
+    .slider.round::before {
+        border-radius: 50%;
+    }
+    
 }
 
-.button-img-scaling { /*This works specificly for this button, image have a height 8px, width set to auto to maintain proper proportions*/
-    height: 0.5rem;
-    width: auto;
+/*Darkmode Toggle Switch End*/
+
+
+/*Sign in / up button*/
+#id-sign-in {
+    display: none;
 }
 
-.button-img-responsive-scaling { /*Currently not working! Trying to make a class that can maintain the image native resolution while scaling with font-size*/
-    min-height: 0rem;
-    max-height: auto;
-    width: auto;
+
+/*Mobile button*/
+
+.mobile-navigation {
+    background-color: transparent;
+    border: none;
 }
 
-.container {
-    width: 100%;
+#id-mobile-navigation {
+    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+        height: 2.25rem;
+        width: auto;
+    }
+}
+
+header .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    gap: 1.5rem;
+    padding-block: var(--container-padding);
+}
+
+@media ( width >= 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .btn-toggle-switch .label {
+        display: block;
+    }
+
+    header .container {
+        gap: 3.7rem;
+    }
+}
+
+@media ( width >= 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .font-style-5 {
+        color: var(--clr-Gray700);
+    }
+
+    .navigation-features {
+        display: block;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    #id-sign-in {
+        display: block;
+    }
+
+    header .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 1.5rem;
+        padding-block: var(--container-padding);
+    }
 }
