@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+ /*Custom Properties (variables)*/
+ 
+:root {
+
+    /*Colors*/
+
+    --clr-Gray900: #0B0F19;
+    --clr-Gray800: #33354D;
+    --clr-Gray700: #565973;
+    --clr-Gray600: #9397AD;
+    --clr-White: #ffffff;
+    --clr-Primary: #6366F1;
+    --clr-Success: #22C55E;
+
+    /*Font Weights*/
+
+    --font-weight-Regular: 400;
+    --font-weight-SemiBold: 600;
+    --font-weight-Bold: 700;
+    --font-weight-ExtraBold: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    background-color: darkslateblue;
+    font-family: "Manrope", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+    /*Font styling*/
+
+h1 {
+    color: var(--clr-Gray900);
+    font-size: 56px;
+    font-weight: var(--font-weight-ExtraBold);
+    }
+
+h2 {
+    color: var(--clr-Gray900);
+    font-size: 40px;
+    font-weight: var(--font-weight-ExtraBold);
+}
+
+h3 {
+    color: var(--clr-Gray900);
+    font-size: 32px;
+    font-weight: var(--font-weight-ExtraBold);
+}
+
+h4 {
+    color: var(--clr-Gray900);
+    font-size: 24;
+    font-weight: var(--font-weight-ExtraBold);
+}
+
+h5 {
+    color: var(--clr-Gray900);
+    font-size: 20;
+    font-weight: var(--font-weight-ExtraBold);
+}
+
+.font-style-1 {
+    color: var(--clr-Gray600);
+    font-size: 14px;
+    font-weight: var(--font-weight-Regular);
+}
+
+.font-style-2 {
+    color: var(--clr-Gray900);
+    font-size: 16px;
+    font-weight: var(--font-weight-Bold);
+}
+
+.font-style-3 {
+    color: var(--clr-Gray900);
+    font-size: 16px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-4 {
+    color: var(--clr-Gray700);
+    font-size: 18px;
+    font-weight: var(--font-weight-Regular);
+}
+
+.font-style-5 {
+    color: var(--clr-Gray700);
+    font-size: 16px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-6 {
+    color: var(--clr-Gray800);
+    font-size: 16px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-7 {
+    color: var(--clr-Gray700);
+    font-size: 14px;
+    font-weight: var(--font-weight-Regular);
+}
+
+.font-style-8 {
+    color: var(--clr-Gray700);
+    font-size: 16px;
+    font-weight: var(--font-weight-Regular);
+}
+
+.font-style-9 {
+    color: var(--clr-White);
+    font-size: 14px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-10 {
+    color: var(--clr-White);
+    font-size: 16px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-11 {
+    color: var(--clr-Primary);
+    font-size: 14px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-12 {
+    color: var(--clr-Success);
+    font-size: 14px;
+    font-weight: var(--font-weight-SemiBold);
+}
+
+.font-style-13 {
+    color: var(--clr-Gray600);
+    font-size: 18px;
+    font-weight: var(--font-weight-Regular);
+}
+
+/* Utility Classes */
+
+.round-button {
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: var(--clr-White);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    border: black solid 1px;
+}
+
+.button-img-scaling { /*This works specificly for this button, image have a height 8px, width set to auto to maintain proper proportions*/
+    height: 0.5rem;
+    width: auto;
+}
+
+.button-img-responsive-scaling { /*Currently not working! Trying to make a class that can maintain the image native resolution while scaling with font-size*/
+    min-height: 0rem;
+    max-height: auto;
+    width: auto;
+}
+
+.container {
+    width: 100%;
+}
