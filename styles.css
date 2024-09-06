@@ -12,11 +12,15 @@
     --clr-Gray800: #33354D;
     --clr-Gray700: #565973;
     --clr-Gray600: #9397AD;
+    --clr-Gray300: #E2E5F1;
+    --clr-Gray100: #F3F6FF;
     --clr-White: #ffffff;
     --clr-Primary: #6467f2;
     --clr-Primary-hover: hsl(239, 85%, 64%);
     --clr-Primary-active: hsl(239, 85%, 70%);
     --clr-Success: #22C55E;
+    
+    --background-gradient: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
 
     /*Font Weights*/
 
@@ -203,7 +207,7 @@ a:hover {
 }
 
 #round-button-page1 {
-    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+    .img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
         height: 0.5rem;
         width: auto;
     }
@@ -234,7 +238,7 @@ a:hover {
 }
 
 #id-sign-in {
-    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+    .img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
         height: 1.125rem;
         width: auto;
     }
@@ -243,7 +247,7 @@ a:hover {
 /*Logotype*/
 
 #logotype {
-    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+    .img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
         height: 2.75rem;
         width: auto;
     }
@@ -339,6 +343,117 @@ a:hover {
 }
 
 
+
+/*Page 1*/
+.p-1-wrapper {
+    width: 100vw;
+    background: var(--background-gradient);
+}
+
+#page-1 {
+    /* display: none; */
+}
+
+/*Page 2*/
+#page-2 {
+    /* display: none; */
+    padding: var(--container-padding);
+
+    .page-2-logos {
+        display: none; /*flex / none*/
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .p2-logo1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 100px;
+        border: 1px solid var(--clr-Gray300);
+        border-radius: 0.5rem;
+    }
+
+    .p2-logo2 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 100px;
+        border: 1px solid var(--clr-Gray300);
+        border-radius: 0.5rem;
+    }
+    
+    .p2-logo3 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 100px;
+        border: 1px solid var(--clr-Gray300);
+        border-radius: 0.5rem;
+    }
+    
+    .p2-logo4 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 100px;
+        border: 1px solid var(--clr-Gray300);
+        border-radius: 0.5rem;
+    }
+    .p2-logo5 {
+        display: grid; /*grid / none*/
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 100px;
+        border: 1px solid var(--clr-Gray300);
+        border-radius: 0.5rem;
+    }
+    .p2-logo6 {
+        display: grid; /*grid / none*/
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 100px;
+        border: 1px solid var(--clr-Gray300);
+        border-radius: 0.5rem;
+    }
+
+}
+
+/*Page 3*/
+.p-3-wrapper {
+    width: 100vw;
+    background: var(--clr-Gray100);
+}
+#page-3 {
+    /* display: none; */
+}
+
+/*Page 4*/
+#page-4 {
+    /* display: none; */
+}
+
+/*Page 5*/
+.p-5-wrapper {
+    width: 100vw;
+    background: var(--clr-Gray100);
+}
+#page-5 {
+    /* display: none; */
+}
+
+/*Page 6*/
+#page-6 {
+    /* display: none; */
+}
+
 /*Mobile button*/
 
 .mobile-navigation {
@@ -347,7 +462,7 @@ a:hover {
 }
 
 #id-mobile-navigation {
-    .button-img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
+    .img-scaling { /*use with specific button id, set img native height/width in rem and set the other as auto*/
         height: 2.25rem;
         width: auto;
     }
@@ -360,6 +475,14 @@ header .container {
     gap: 1.5rem;
     padding-block: var(--container-padding);
 }
+
+main .container {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(6, auto);
+}
+
+
 
 footer {
     .container {
@@ -389,8 +512,25 @@ footer {
         gap: 3.7rem;
     }
 
+    #page-2{
+
+        .page-2-logos {
+            display: flex; /*flex / none*/
+            gap: 1rem;
+        }
+    
+        .p2-logo5 {
+            display: none; /*grid / none*/
+        }
+    
+        .p2-logo6 {
+            display: none; /*grid / none*/
+        }
+
+    }
+
     footer .container {
-        .credit-break {
+        .row-break {
             display: none;
         }
     }
@@ -399,6 +539,12 @@ footer {
 
 /*Desktop version*/
 @media ( width >= 1400px) {
+
+    .p-1-wrapper {
+        border-inline: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+
     .container {
         max-width: 1320px;
     }
@@ -419,12 +565,33 @@ footer {
         display: flex;
     }
 
+    header {
+        border-inline: 1px solid #000000;
+        border-top: 1px solid #000000;
+    }
+
     header .container {
         display: grid;
         align-items: center;
         grid-template-columns: auto 1fr auto auto;
         gap: 1.5rem;
         padding-block: var(--container-padding);
+    }
+
+    #page-2{
+
+        .page-2-logos {
+            display: flex; /*flex / none*/
+        }
+    
+        .p2-logo5 {
+            display: grid; /*grid / none*/
+        }
+    
+        .p2-logo6 {
+            display: grid; /*grid / none*/
+        }
+
     }
 
     footer .container {
