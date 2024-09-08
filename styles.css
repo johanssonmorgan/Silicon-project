@@ -356,14 +356,16 @@ a:hover {
 
 /*Page 2*/
 #page-2 {
-    /* display: none; */
-    padding: var(--container-padding);
+    .container {
+        padding: 0;
+        padding-block: var(--container-padding);
+    }
 
     .page-2-logos {
         display: none; /*flex / none*/
         justify-content: space-between;
         align-items: center;
-
+        margin-top: 2rem;
     }
 
     .p2-logo1 {
@@ -423,7 +425,164 @@ a:hover {
         border: 1px solid var(--clr-Gray300);
         border-radius: 0.5rem;
     }
+    .page2-phone {
+        display: none;
+    }
+    .page-2-app-features {
+        padding-top: none; /*desktop:7rem tablet:3.9rem*/
+        display: block; /*block / grid*/
+        grid-template-columns: auto;
+        justify-content:space-between;
+        gap: 12.625rem;
+    }
+    .af-top{
+        grid-area: af-top;
+        display: grid;
+        row-gap: 2rem;
+        text-align: center; /*center / start*/
+    }
+    .af-1{
+        .af-1-icon {
+            grid-area: af-1-icon;
+        }
+        .af-1-header {
+            grid-area: af-1-header;
+        }
+        .af-1-text {
+            grid-area: af-1-text;
+        }
 
+        grid-area: af-1;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "af-1-icon af-1-header"
+        "af-1-icon af-1-text";
+    }
+    .af-2{
+        .af-2-icon {
+            grid-area: af-2-icon;
+        }
+        .af-2-header {
+            grid-area: af-2-header;
+        }
+        .af-2-text {
+            grid-area: af-2-text;
+        }
+
+        grid-area: af-2;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "af-2-icon af-2-header"
+        "af-2-icon af-2-text";
+    }
+    .af-3{
+        .af-3-icon {
+            grid-area: af-3-icon;
+        }
+        .af-3-header {
+            grid-area: af-3-header;
+        }
+        .af-3-text {
+            grid-area: af-3-text;
+        }
+
+        grid-area: af-3;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "af-3-icon af-3-header"
+        "af-3-icon af-3-text";
+    }
+    .af-4{
+        .af-4-icon {
+            grid-area: af-4-icon;
+        }
+        .af-4-header {
+            grid-area: af-4-header;
+        }
+        .af-4-text {
+            grid-area: af-4-text;
+        }
+
+        grid-area: af-4;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "af-4-icon af-4-header"
+        "af-4-icon af-4-text";
+    }
+    .af-5{
+        .af-5-icon {
+            grid-area: af-5-icon;
+        }
+        .af-5-header {
+            grid-area: af-5-header;
+        }
+        .af-5-text {
+            grid-area: af-5-text;
+        }
+
+        grid-area: af-5;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "af-5-icon af-5-header"
+        "af-5-icon af-5-text";
+    }
+    .af-6{
+        .af-6-icon {
+            grid-area: af-6-icon;
+        }
+        .af-6-header {
+            grid-area: af-6-header;
+        }
+        .af-6-text {
+            grid-area: af-6-text;
+        }
+
+        grid-area: af-6;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "af-6-icon af-6-header"
+        "af-6-icon af-6-text";
+    }
+    .app-features-card {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "af-top"
+        "af-1"
+        "af-2"
+        "af-3"
+        "af-4"
+        "af-5"
+        "af-6";
+    }
+    
+    
 }
 
 /*Page 3*/
@@ -514,6 +673,10 @@ footer {
 
     #page-2{
 
+        .container {
+            padding-top: 1.9rem;
+        }
+
         .page-2-logos {
             display: flex; /*flex / none*/
             gap: 1rem;
@@ -527,6 +690,21 @@ footer {
             display: none; /*grid / none*/
         }
 
+        .app-features-card {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+            "af-top af-top"
+            "af-1 af-2"
+            "af-3 af-4"
+            "af-5 af-6";
+        }
+
+        .page-2-app-features {
+            padding-block: 3.9rem; /*desktop:7rem tablet:3.9rem*/
+        }
     }
 
     footer .container {
@@ -592,6 +770,23 @@ footer {
             display: grid; /*grid / none*/
         }
 
+        .page-2-app-features {
+            padding-block: 7rem; /*desktop:7rem tablet:3.9rem*/
+            justify-content: space-between;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto;
+            align-items:start;
+        }
+
+        .af-top{
+            text-align:start; /*center / start*/
+            row-gap: 1rem;
+        }
+
+        .page2-phone {
+            display: block;
+        }
     }
 
     footer .container {
