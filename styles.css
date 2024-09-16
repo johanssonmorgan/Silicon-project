@@ -293,11 +293,8 @@ margin-bottom: 4rem
 .sign-in-icon {height: 1.125em;}
 .next-icon {height: .375em;
 
-    @media (width >= 768px) {
-        height: 6px;
-    }
     @media (width >= 1400px) {
-        height: 8px;
+        height: .5em;
     }
 }
 .appstore-icon {width: 7.75em;
@@ -321,11 +318,10 @@ margin-bottom: 4rem
 
 
 /* Navigation bar */
-.nav-silicon-logo{}
 .nav-features {
     display: none;
 }
-/* Dark Mode Toggle Start */
+/* Dark Mode Toggle Start - Kod efter Hans Tips & Trix video - Har skrivit om den något för att få mer enhetlig kod*/
 .btn-toggle-switch {
     display: flex;
     align-items: center;
@@ -399,6 +395,7 @@ nav {
 }
 
 header {
+    width: 100%;
     background: var(--background-gradient);
 }
 
@@ -407,7 +404,7 @@ header {
     grid-template-areas:
     "p1-headline"
     "p1-content";
-    gap: 3rem;
+    gap: 2.5rem;
     padding-bottom: 3rem;
 }
 
@@ -448,9 +445,27 @@ header {
 .p1-images {
     grid-area: p1-images;
     display: none;
+    position: relative;
+    min-height: 420px;
+
+    .phone-behind{
+        height: 335px;
+        aspect-ratio: 1;
+        position: absolute;
+        z-index: -10;
+        bottom: 0;
+        right: -105px;
+    }
+    .phone-front{
+        height: 420px;
+        width: 242px;
+        aspect-ratio: 1;
+        position: absolute;
+        z-index: -5;
+        bottom: 0;
+        right: -197px;
+    }
 }
-
-
 
 /*Tablet version*/
 @media (width >= 768px) {
@@ -468,62 +483,39 @@ header {
 
     .page-1 {
         display: grid;
-        row-gap: 10rem;
         justify-items: center;
-        grid-template-columns: 40% auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-areas:
         "p1-headline p1-headline"
         "p1-content p1-images";
         padding-bottom: 0;
-
-        h1{font-size: 44px;}
-        .fs-4{font-size: 18px;}
-        .fs-7{font-size: 14px;}
     }
 
     .p1-headline {
-        max-width: 28rem;
+        padding-top: 2rem;
+        max-width: 60%;
     }
     
     .p1-content {
+        padding-top: 80px;
+        max-width: 650px;
         padding-bottom: 3rem;
-        gap: 2rem;
+        gap: 2.2rem;
+        justify-items: left;
+
         .app-buttons{
             flex-direction: row;
         }
-
         .p1-paragraph {
             text-align: left;
-        }
-
-        .dl-app-btn {
-            width: auto;
+            width: 80%;
         }
     }
 
     .p1-images {
-        position: relative;
-        grid-area: p1-images;
         display: block;
-
-        .phone-behind{
-            height: 335px;
-            aspect-ratio: 1;
-            position: absolute;
-            z-index: -10;
-            bottom: 0;
-            right: -105px;
-        }
-        .phone-front{
-            height: 420px;
-            aspect-ratio: 1;
-            position: absolute;
-            z-index: -5;
-            bottom: 0;
-            right: -285px;
-        }
     }
-
 }
 
 /*Desktop version*/
@@ -550,7 +542,57 @@ header {
         grid-template-columns: auto 1fr auto auto;
         gap: 1.5rem;
         padding-block: var(--container-padding);
-        border-inline: 1px solid #000000;
-        border-top: 1px solid #000000;
+    }
+
+header {
+    border-bottom: 1px solid black;
+}
+    .page-1 {
+        gap: .5rem;
+        padding-top: 112px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+        "p1-headline p1-images"
+        "p1-content p1-images";
+        padding-bottom: 0;
+    }
+
+    .p1-headline {
+        padding-top: 3rem;
+        max-width: 650px;
+
+        h1{
+            text-align: left;
+            width: 80%;
+        }
+    }
+    
+    .p1-content {
+        max-width: 650px;
+        padding-top: 0;
+        gap: 2.5rem;
+        grid-template-rows: auto auto 1fr;
+
+        .p1-paragraph {
+            width: 70%;
+        }
+        .discover-more {
+            align-self: end;
+        }
+    }
+
+    .p1-images {
+        min-height: 680px;
+
+        .phone-behind{
+            height: 548px;
+            right: -160px;
+        }
+        .phone-front{
+            width: 402px;
+            height: 688px;
+            right: -315px;
+        }
     }
 }
