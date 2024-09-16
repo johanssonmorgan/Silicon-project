@@ -5,145 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silicon</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-   <div class="wrapper">
-       <header>
-        <!-- Navigataion bar -->
-           <div class="container">
-       
-               <!-- Company logo -->
-       
-               <a id="logotype" href="index.html" class="logotype">
-       
-                   <img class="img-scaling" src="/images/Silicon-logotype.svg" alt="Silicon logotype">
-       
-               </a>
-       
-               <!-- Features -->
-       
-               <nav id="main-menu" class="navigation-features">
-       
-                   <a class="nav-link font-style-6" href="#">Features</a>
-       
-               </nav>
-       
-               <!-- Dark Mode toggle -->
-       
-               <div id="darkmode-toggle-switch" class="btn-toggle-switch">
-       
-                   <span class="label font-style-5">Dark Mode</span>
-       
-                   <label for="darkmode-switch" class="toggle-switch">
-       
-                       <input type="checkbox" id="darkmode-switch">
-                       <span class="slider round"></span>
-       
-                   </label>
-       
-               </div>
-               
-               <!-- Sign in / up button -->
-       
-               <a id="id-sign-in" class= "primary-button" href="#">
-       
-                   <img class="img-scaling" src="/images/sign-in-icon.svg" alt="Sign in icon">
-                   <span class="font-style-9">Sign in / up</span>
-       
-               </a>
-       
-               <!-- Mobile Navigation Button -->
-               <button id="id-mobile-navigation" class="mobile-navigation">
-                   <img class="img-scaling" src="/images/mobile-menu-button.svg" alt="mobile navigation">
-               </button>
-       
-           </div>
-       
-       </header>
-<main>
-
-    <div class="p-1-wrapper">
-        <section id="page-1" class="container">
-
-            <p>Page 1</p>
-
-        </section>
-    </div>
-    
-    <section id="page-2" class="container">
-
-        <div class="page-2-logos">
-            
-            <div class="p2-logo1">
-                <img src="/images/page2-logo1.svg" alt="logotype 1">
-            </div>
-
-            <div class="p2-logo2">
-                <img src="/images/page2-logo2.svg" alt="logotype 2">
-            </div>
-
-            <div class="p2-logo3">
-                <img src="/images/page2-logo3.svg" alt="logotype 3">
-            </div>
-
-            <div class="p2-logo4">
-                <img src="/images/page2-logo4.svg" alt="logotype 4">
-            </div>
-
-            <div class="p2-logo5">
-                <img src="/images/page2-logo5.svg" alt="logotype 5">
-            </div>
-
-            <div class="p2-logo6">
-                <img src="/images/page2-logo6.svg" alt="logotype 6">
-            </div>
-            
+    <nav class="container">
+        <div class="nav-silicon-logo">
+            <a href="index.html"><img class="silicon-icon" src="/images/Silicon-logotype.svg" alt="Silicon logotype"></a>
         </div>
-
-    </section>
-
-    <div class="p-3-wrapper">
-        <section id="page-3" class="container">
-
-            <p>Page 3</p>
-
-        </section>
-    </div>
-    
-    <section id="page-4" class="container">
-        <p>Page 4</p>
-    </section>
-    
-    <div class="p-5-wrapper">
-        <section id="page-5" class="container">
-
-          <p>Page 5</p>
-
-        </section>
-    </div>
-    
-    <section id="page-6" class="container">
-        <p>Page 6</p>
-    </section>
-
-</main>
-<footer>
-<!-- Copyright / Credits -->
-    <div class="container">
-
-        <p class="font-style-1">
+        <div class="nav-features">
+            <a class="fs-6" href="#">Features</a>
+        </div>
+        <div id="darkmode-toggle-switch" class="btn-toggle-switch">
+            <span class="label fs-5">Dark Mode</span>
+            <label for="darkmode-switch" class="toggle-switch">
+                <input type="checkbox" id="darkmode-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="nav-sign-in">
+            <a class= "primary-btn-properties sign-in-btn" href="#">
+                <img class="sign-in-icon" src="/images/sign-in-icon.svg" alt="Sign in / up">
+                <span class="fs-9">Sign in / up</span>
+            </a>
+        </div>
+        <div >
+            <button class="nav-mobile-btn">
+                <img class="mobile-icon" src="/images/mobile-menu-button.svg" alt="Mobile menu">
+            </button>
+        </div>
+    </nav>
+    <header id="hero">
+        <div class="page-1 container">
+            <div class="p1-headline">
+                <h1 class="center-text">Manage All Your Money in One App</h1>
+            </div>
+            <div class="p1-content">
+                <p class="p1-paragraph fs-4 center-text">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+                
+                <div class="app-buttons">
+                    <a class="primary-button-properties dl-app-btn" href="#"><img class="appstore-icon" src="images/appstore.svg" alt="app store"></a>
+                    <a class="primary-button-properties dl-app-btn" href="#"><img class="googleplay-icon" src="images/googleplay.svg" alt="google play"></a>
+                </div>
+                
+                <a class="discover-more" href="#">
+                    <span class="round-btn-properties round-btn-large">
+                        <img class="next-icon" src="/images/next-btn.svg" alt="next button">
+                    </span>
+                    <span class="fs-7">Discover more</span>
+                </a>
             
-            © 2024 Silicon. All rights reserved.
-            <br class="row-break"> 
-            Credit MadrasThemes
-        
-        </p>
-
-    </div>
-
-</footer>
-   </div>
-    
+            </div>
+            <div class="p1-images">
+                <img class="phone-behind" src="images/p1-phone-behind.svg" alt="iPhone - My budget">
+                <img class="phone-front" src="images/p1-phone-front.svg" alt="iPhone - Your cards">
+            </div>
+        </div>
+    </header>
+    <section>
+        <p>page2</p>
+    </section>
 </body>
 </html>
