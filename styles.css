@@ -394,6 +394,7 @@ nav {
     padding-block: var(--container-padding);
 }
 
+/* Page 1 */
 header {
     width: 100%;
     background: var(--background-gradient);
@@ -467,6 +468,98 @@ header {
     }
 }
 
+/* Page 2 */
+.page-2 {
+    padding-top: 2.6rem;
+}
+.p2-logos {
+    padding-block: 4rem;
+    display: none;
+    justify-content: space-between;
+
+    .logo-5 {
+        display: none;
+    }
+    .logo-6 {
+        display: none;
+    }
+}
+
+.logoipsum {
+    display: grid;
+    place-items: center;
+    width: 158px;
+    height: 98px;
+    border: 1px solid var(--clr-Gray300);
+    border-radius: 0.5rem;
+}
+
+.p2-card {
+}
+
+.p2-phone {
+    display: none;
+}
+
+.p2-app-features {
+    display: grid;
+    grid-template-areas:
+    "app-features-header"
+    "af-1"
+    "af-2"
+    "af-3"
+    "af-4"
+    "af-5"
+    "af-6";
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+
+    .app-features-header {
+        text-align: center;
+    }
+
+    .af-icon {
+        grid-area: af-icon;
+    }
+    .af-header {
+        grid-area: af-header;
+    }
+    .af-text {
+        grid-area: af-text;
+    }
+    .app-features-header {
+        grid-area: app-features-header;
+    }
+    .af-1 {
+        grid-area: af-1;
+    }
+    .af-2 {
+        grid-area: af-2;
+    }
+    .af-3 {
+        grid-area: af-3;
+    }
+    .af-4 {
+        grid-area: af-4;
+    }
+    .af-5 {
+        grid-area: af-5;
+    }
+    .af-6 {
+        grid-area: af-6;
+    }
+    .app-features {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "af-icon af-header"
+        "af-icon af-text";
+    }
+}
+
+
 /*Tablet version*/
 @media (width >= 768px) {
     .container {
@@ -516,6 +609,26 @@ header {
     .p1-images {
         display: block;
     }
+
+    .p2-logos {
+        padding-block: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .p2-app-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "app-features-header app-features-header"
+        "af-1 af-2"
+        "af-3 af-4"
+        "af-5 af-6";
+        gap: 2.5rem;
+
+
+    }
+
 }
 
 /*Desktop version*/
@@ -545,7 +658,7 @@ header {
     }
 
 header {
-    border-bottom: 1px solid black;
+    border: 1px solid black;
 }
     .page-1 {
         gap: .5rem;
@@ -593,6 +706,23 @@ header {
             width: 402px;
             height: 688px;
             right: -315px;
+        }
+    }
+
+    .p2-logos {
+        padding-block: 6rem;
+        display: flex;
+        justify-content: space-between;
+
+        .logoipsum {
+            width: 196px;
+            height: 100px;
+        }
+        .logo-5 {
+            display: grid;
+        }
+        .logo-6 {
+            display: grid;
         }
     }
 }
