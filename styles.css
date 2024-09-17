@@ -266,6 +266,12 @@ a {
 .w-90 {
     width: 90%;
 }
+.bg-white {
+    background-color: var(--clr-White);
+}
+.bg-primary {
+    background-color: var(--clr-Primary);
+}
 
 /* Primary button */
 .primary-btn-properties {
@@ -372,7 +378,6 @@ a {
         width: 8.5em;
     }
 }
-
 
 /* Navigation bar */
 .nav-features {
@@ -658,7 +663,109 @@ header {
     "p4-br-left p4-br-right"
     "p4-br-button p4-br-button";
 }
-  
+
+/* Page 5 */
+#page-5 {
+    background-color: var(--clr-Gray100);
+    display: none;
+}
+
+.page-5 {
+    padding-inline: .75rem;
+    padding-block: 5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.p5-left {
+    width: 26rem;
+    height: 20.5625rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-inline: 1.5rem;
+    flex-direction: column;
+    border-radius: .5em;
+}
+.p5-right {
+    width: 26rem;
+    height: 20.5625rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-inline: 1.5rem;
+    flex-direction: column;
+    border-radius: .5em;
+}
+
+.quotation-mark {
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    aspect-ratio: 1;
+    background-color: var(--clr-Primary);
+    border-radius: .375em;
+}
+
+.albert-avatar {grid-area: albert-avatar;}
+.albert-name {grid-area: albert-name;}
+.albert-title {grid-area: albert-title;}
+
+.fannie-avatar {grid-area: fannie-avatar;}
+.fannie-name {grid-area: fannie-name;}
+.fannie-title {grid-area: fannie-title;}
+
+.fannie {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "fannie-avatar fannie-name"
+    "fannie-avatar fannie-title";
+}
+
+.albert {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "albert-avatar albert-name"
+    "albert-avatar albert-title";
+}
+
+.review-container-left {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    grid-template-rows: 1.75rem 1rem 19.5625rem;
+}
+
+.review-container-right {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    grid-template-rows: 1.75rem 1rem 19.5625rem;
+}
+
+#quotation-left {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+#card-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#quotation-right {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+#card-right {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
 
 /*Tablet version*/
 @media (width >= 768px) {
@@ -887,6 +994,10 @@ header {
     }
 
     #page-4 {
+        display: block;
+    }
+
+    #page-5 {
         display: block;
     }
 }
