@@ -354,6 +354,9 @@ a {
 .mobile-icon {height: 2.25em;}
 .sign-in-icon {height: 1.125em;}
 .learn-more-icon {height: 1.25em;}
+.quotation-icon {height: 1.25em;}
+.stars-rating {height: 1em;}
+.reviewer-avatar {height: 3em;}
 .next-icon {height: .375em;
 
     @media (width >= 1400px) {
@@ -642,18 +645,11 @@ header {
     display: flex;
     flex-direction: column;
 }
-.p4-br-header {
-    grid-area: p4-br-header;
-}
-.p4-br-left {
-    grid-area: p4-br-left;
-}
-.p4-br-right {
-    grid-area: p4-br-right;
-}
-.p4-br-button {
-    grid-area: p4-br-button;
-}
+.p4-br-header {grid-area: p4-br-header;}
+.p4-br-left {grid-area: p4-br-left;}
+.p4-br-right {grid-area: p4-br-right;}
+.p4-br-button {grid-area: p4-br-button;}
+
 .p4-br-card {
     display: grid;
     gap: 3rem;
@@ -674,29 +670,20 @@ header {
     padding-inline: .75rem;
     padding-block: 5rem;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.p5-left {
-    width: 26rem;
-    height: 20.5625rem;
-    display: flex;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-top: 3rem;
-    padding-inline: 1.5rem;
-    flex-direction: column;
-    border-radius: .5em;
-}
-.p5-right {
-    width: 26rem;
-    height: 20.5625rem;
-    display: flex;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-top: 3rem;
-    padding-inline: 1.5rem;
+.p5-card {
+    width: 416px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 24px;
+    padding-bottom: 24px;
+    padding-top: 48px;
+    padding-inline: 24px;
     flex-direction: column;
     border-radius: .5em;
 }
@@ -705,7 +692,7 @@ header {
     z-index: 1;
     display: grid;
     place-items: center;
-    width: 2.75rem;
+    width: 2.75em;
     aspect-ratio: 1;
     background-color: var(--clr-Primary);
     border-radius: .375em;
@@ -714,7 +701,6 @@ header {
 .albert-avatar {grid-area: albert-avatar;}
 .albert-name {grid-area: albert-name;}
 .albert-title {grid-area: albert-title;}
-
 .fannie-avatar {grid-area: fannie-avatar;}
 .fannie-name {grid-area: fannie-name;}
 .fannie-title {grid-area: fannie-title;}
@@ -726,7 +712,6 @@ header {
     "fannie-avatar fannie-name"
     "fannie-avatar fannie-title";
 }
-
 .albert {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -735,16 +720,10 @@ header {
     "albert-avatar albert-title";
 }
 
-.review-container-left {
+.review-container {
     display: grid;
-    grid-template-columns: 1.5rem 1fr;
-    grid-template-rows: 1.75rem 1rem 19.5625rem;
-}
-
-.review-container-right {
-    display: grid;
-    grid-template-columns: 1.5rem 1fr;
-    grid-template-rows: 1.75rem 1rem 19.5625rem;
+    grid-template-columns: 24px 1fr;
+    grid-template-rows: 1.75rem 1rem minmax(19.5rem, auto);
 }
 
 #quotation-left {
