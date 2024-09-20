@@ -30,153 +30,55 @@
 
 /*Font styling*/
 
-h1 {
-    color: var(--clr-tabletGray);
-    font-size: 2.125rem;
-    font-weight: var(--font-weight-ExtraBold);
+h1 {color: var(--clr-tabletGray);font-size: 2.125rem;font-weight: var(--font-weight-ExtraBold);
+    @media (width >= 768px) {font-size: 2.75rem;}
+    @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 3.5rem;}}
 
-    @media (width >= 768px) {
-        font-size: 2.75rem;
-    }
-    @media (width >= 1400px) {
-        color: var(--clr-Gray900);
-        font-size: 3.5rem;
-    }
-}
-h2 {
-    color: var(--clr-tabletGray);
-    font-size: 1.75rem;
-    font-weight: var(--font-weight-ExtraBold);
+h2 {color: var(--clr-tabletGray);font-size: 1.75rem;font-weight: var(--font-weight-ExtraBold);
+    @media (width >= 768px) {font-size: 2.125rem;}
+    @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 2.5rem;}}
 
-    @media (width >= 768px) {
-        font-size: 2.125rem;
-    }
-    @media (width >= 1400px) {
-        color: var(--clr-Gray900);
-        font-size: 2.5rem;
-    }
-}
-h3 {
-    color: var(--clr-tabletGray);
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-ExtraBold);
+h3 {color: var(--clr-tabletGray);font-size: 1.5rem;font-weight: var(--font-weight-ExtraBold);
+    @media (width >= 768px) {color: var(--clr-Gray900);font-size: 2rem;}}
 
-    @media (width >= 768px) {
-        color: var(--clr-Gray900);
-        font-size: 2rem;
-    }
-}
-h4 {
-    color: var(--clr-tabletGray);
-    font-size: 1.35rem;
-    font-weight: var(--font-weight-ExtraBold);
+h4 {color: var(--clr-tabletGray);font-size: 1.35rem;font-weight: var(--font-weight-ExtraBold);
+    @media (width >= 768px) {font-size: 1.42rem;}
+    @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 1.5rem;}}
 
-    @media (width >= 768px) {
-        font-size: 1.42rem;
-    }
-    @media (width >= 1400px) {
-        color: var(--clr-Gray900);
-        font-size: 1.5rem;
-    }
-}
-h5 {
-    color: var(--clr-tabletGray);
-    font-size: 1.25rem;
-    font-weight: var(--font-weight-ExtraBold);
+h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weight-ExtraBold);
+    @media (width >= 1400px) {color: var(--clr-Gray900);}}
 
-    @media (width >= 1400px) {
-        color: var(--clr-Gray900);
-    }
-}
-.fs-1 {
-    color: var(--clr-Gray600);
-    font-size: .875rem;
-    font-weight: var(--font-weight-Regular);
-}
-.fs-2 {
-    color: var(--clr-Gray900);
-    font-size: 1rem;
-    font-weight: var(--font-weight-Bold);
-}
-.fs-3 {
-    color: var(--clr-tabletGray);
-    font-size: 1rem;
-    font-weight: var(--font-weight-SemiBold);
+.fs-1 {color: var(--clr-Gray600);font-size: .875rem;font-weight: var(--font-weight-Regular);}
 
-    @media (width >= 768px) {
-        color: var(--clr-Gray900);
-    }
-}
-.fs-4 {
-    color: var(--clr-tabletLGray);
-    font-size: 1.125rem;
-    font-weight: var(--font-weight-Regular);
+.fs-2 {color: var(--clr-Gray900);font-size: 1rem;font-weight: var(--font-weight-Bold);}
 
-    @media (width >= 1400px) {
-        color: var(--clr-Gray700);
-    }
-}
-.fs-5 {
-    color: var(--clr-tabletGray);
-    font-size: 1rem;
-    font-weight: var(--font-weight-SemiBold);
+.fs-3 {color: var(--clr-tabletGray);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
+    @media (width >= 768px) {color: var(--clr-Gray900);}}
 
-    @media (width >= 1400px) {
-        color: var(--clr-Gray700)
-    }
-}
-.fs-6 {
-    color: var(--clr-Gray800);
-    font-size: 1rem;
-    font-weight: var(--font-weight-SemiBold);
-}
-.fs-7 {
-    color: var(--clr-tabletLGray);
-    font-size: .875rem;
-    font-weight: var(--font-weight-Regular);
+.fs-4 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {color: var(--clr-Gray700);}}
 
-    @media (width >= 1400px) {
-        color: var(--clr-Gray700)
-    }
-}
-.fs-8 {
-    color: var(--clr-tabletLGray);
-    font-size: 1rem;
-    font-weight: var(--font-weight-Regular);
+.fs-5 {color: var(--clr-tabletGray);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
+    @media (width >= 1400px) {color: var(--clr-Gray700)}}
 
-    @media (width >= 1400px) {
-        color: var(--clr-Gray700)
-    }
-}
-.fs-9 {
-    color: var(--clr-White);
-    font-size: .875rem;
-    font-weight: var(--font-weight-SemiBold);
-}
-.fs-10 {
-    color: var(--clr-White);
-    font-size: 1rem;
-    font-weight: var(--font-weight-SemiBold);
-}
-.fs-11 {
-    color: var(--clr-Primary);
-    font-size: .875rem;
-    font-weight: var(--font-weight-SemiBold);
-}
-.fs-12 {
-    color: var(--clr-Success);
-    font-size: .875rem;
-    font-weight: var(--font-weight-SemiBold);
-}
-.fs-13 {
-    color: var(--clr-tabletLGray);
-    font-size: 1.125rem;
-    font-weight: var(--font-weight-Regular);
+.fs-6 {color: var(--clr-Gray800);font-size: 1rem;font-weight: var(--font-weight-SemiBold);}
 
-    @media (width >= 1400px) {
-        color: var(--clr-Gray600)
-    }
-}
+.fs-7 {color: var(--clr-tabletLGray);font-size: .875rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {color: var(--clr-Gray700)}}
+
+.fs-8 {color: var(--clr-tabletLGray);font-size: 1rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {color: var(--clr-Gray700)}}
+
+.fs-9 {color: var(--clr-White);font-size: .875rem;font-weight: var(--font-weight-SemiBold);}
+
+.fs-10 {color: var(--clr-White);font-size: 1rem;font-weight: var(--font-weight-SemiBold);}
+
+.fs-11 {color: var(--clr-Primary);font-size: .875rem;font-weight: var(--font-weight-SemiBold);}
+
+.fs-12 {color: var(--clr-Success);font-size: .875rem;font-weight: var(--font-weight-SemiBold);}
+
+.fs-13 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {color: var(--clr-Gray600)}}
 
 * {
     margin: 0;
@@ -200,9 +102,7 @@ a {
 .center-text {text-align: center;}
 .mx-auto {margin-inline: auto;}
 .my-auto {margin-block: auto;}
-.flex-align {
-    display: flex;
-    align-items: center;}
+.flex-align {display: flex; align-items: center;}
 .gap-05 {gap: .5rem;}
 .gap-1 {gap: 1rem;}
 .gap-15 {gap: 1.5rem;}
@@ -271,6 +171,7 @@ a {
         background-color: transparent;
         border: none;
     }
+
 /* Round buttons */
 .round-btn-properties {
     border: 0;
@@ -349,34 +250,19 @@ a {
 .contact-text-icon {height: 1.75em;}
 .newsletter-bell-icon {height: 4.875em;}
 .next-icon {height: .375em;
-
-    @media (width >= 1400px) {
-        height: .5em;
-    }
-}
+    @media (width >= 1400px) {height: .5em;}}
 .appstore-icon {width: 7.75em;
-
-    @media (width >= 768px) {
-        width: 92px;
-    }
-    @media (width >= 1400px) {
-        width: 8.5em;
-    }
-}
+    @media (width >= 768px) {width: 92px;}
+    @media (width >= 1400px) {width: 8.5em;}}
 .googleplay-icon {width: 7.75em;
-    
-    @media (width >= 768px) {
-        width: 92px;
-    }
-    @media (width >= 1400px) {
-        width: 8.5em;
-    }
-}
+    @media (width >= 768px) {width: 92px;}
+    @media (width >= 1400px) {width: 8.5em;}}
 
 /* Navigation bar */
 .nav-features {
     display: none;
 }
+
 /* Dark Mode Toggle Start - Kod efter Hans Tips & Trix video - Har skrivit om den något för att få mer enhetlig kod*/
 .btn-toggle-switch {
     display: flex;
@@ -1074,7 +960,6 @@ header {
     .container {
         max-width: 1320px;
     }
-
     .nav-features {
         display: block;
     }
@@ -1227,7 +1112,6 @@ header {
         p {
             width: 100%;
         }
-
         text-align: left;
     }
 
