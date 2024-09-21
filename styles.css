@@ -7,8 +7,8 @@
     /*Colors*/
     --clr-tabletGray: #131022;
     --clr-tabletLGray: #585C7B;
-    --clr-Gray900: #0B0F19;
-    --clr-Gray800: #33354D;
+    --clr-Gray900: #0B0F19; /*Klar*/
+    --clr-Gray800: #33354D; /*Klar*/
     --clr-Gray700: #565973;
     --clr-Gray600: #9397AD;
     --clr-Gray300: #E2E5F1;
@@ -18,8 +18,20 @@
     --clr-Primary: hsl(239, 85%, 67%);
     --clr-Success: hsl(142, 71%, 45%);
     
+    --clr-dm-label-dt: hsl(234, 14%, 39%); /*Klar*/
+    --clr-dm-label: hsl(250, 36%, 10%); /*Klar*/
+    
+    --clr-GraySp-1: #585C7B; /*Klar*/
+    --clr-GraySp-2: #565973; /*Klar*/
+    --clr-GraySp-3: #565973; /*Klar*/
+    --clr-GraySp-4: #131022; /*dl-app*/ /*Klar*/
+    --clr-GraySp-5: #0B0F19; /*dl-app-desktop*/ /*Klar*/
+    
+    --clr-hero-bg: #FFFFFF; /*Klar*/
+    
     --dropshadow-primary: 2px 5px 10px #0000002d;
-    --background-gradient: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+    --background-gradient: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%), var(--clr-hero-bg);
+
 
 /*Font Weights*/
     --font-weight-Regular: 400;
@@ -30,36 +42,41 @@
 
 /*Font styling*/
 
+
 h1 {color: var(--clr-tabletGray);font-size: 2.125rem;font-weight: var(--font-weight-ExtraBold);
     @media (width >= 768px) {font-size: 2.75rem;}
     @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 3.5rem;}}
-
+    
 h2 {color: var(--clr-tabletGray);font-size: 1.75rem;font-weight: var(--font-weight-ExtraBold);
-    @media (width >= 768px) {font-size: 2.125rem;}
-    @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 2.5rem;}}
+@media (width >= 768px) {font-size: 2.125rem;}
+@media (width >= 1400px) {color: var(--clr-Gray900);font-size: 2.5rem;}}
 
 h3 {color: var(--clr-tabletGray);font-size: 1.5rem;font-weight: var(--font-weight-ExtraBold);
-    @media (width >= 768px) {color: var(--clr-Gray900);font-size: 2rem;}}
+@media (width >= 768px) {color: var(--clr-Gray900);font-size: 2rem;}}
 
 h4 {color: var(--clr-tabletGray);font-size: 1.35rem;font-weight: var(--font-weight-ExtraBold);
-    @media (width >= 768px) {font-size: 1.42rem;}
-    @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 1.5rem;}}
+@media (width >= 768px) {font-size: 1.42rem;}
+@media (width >= 1400px) {color: var(--clr-Gray900);font-size: 1.5rem;}}
 
 h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weight-ExtraBold);
-    @media (width >= 1400px) {color: var(--clr-Gray900);}}
+@media (width >= 1400px) {color: var(--clr-Gray900);}}
+
+.fs-sp-1 {color: var(--clr-GraySp-1);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
+@media (width >= 768px) {color: var(--clr-GraySp-2);}
+@media (width >= 1400px) {color: var(--clr-GraySp-3);}}
 
 .fs-1 {color: var(--clr-Gray600);font-size: .875rem;font-weight: var(--font-weight-Regular);}
 
 .fs-2 {color: var(--clr-Gray900);font-size: 1rem;font-weight: var(--font-weight-Bold);}
 
 .fs-3 {color: var(--clr-tabletGray);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
-    @media (width >= 768px) {color: var(--clr-Gray900);}}
+@media (width >= 768px) {color: var(--clr-Gray900);}}
 
 .fs-4 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 1400px) {color: var(--clr-Gray700);}}
+@media (width >= 1400px) {color: var(--clr-Gray700);}}
 
-.fs-5 {color: var(--clr-tabletGray);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
-    @media (width >= 1400px) {color: var(--clr-Gray700)}}
+.fs-5 {color: var(--clr-dm-label);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
+    @media (width >= 1400px) {color: var(--clr-dm-label-dt)}}
 
 .fs-6 {color: var(--clr-Gray800);font-size: 1rem;font-weight: var(--font-weight-SemiBold);}
 
@@ -93,22 +110,56 @@ h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weig
 .fs-13 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
     @media (width >= 1400px) {color: var(--clr-Gray600)}}
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
+    /*Dark Mode functionality - Kod efter Joakims video Avancerad - Darkmode toggle*/
+    html {
+        color-scheme: light;
+    }
+
+    .dark {
+        color-scheme: dark;
+
+        --clr-tabletGray: #131022;
+        --clr-tabletLGray: #585C7B;
+        --clr-Gray900: #FFFFFF;
+        --clr-Gray800: #FFFFFF;
+        --clr-Gray700: #565973;
+        --clr-Gray600: #9397AD;
+        --clr-Gray300: #E2E5F1;
+        --clr-Gray100: #F3F6FF;
+        --clr-Placeholder: #B4B7C9;
+        --clr-White: hsl(0, 0%, 100%);
+        --clr-Primary: hsl(239, 85%, 67%);
+        --clr-Success: hsl(142, 71%, 45%);
+        
+        --clr-dm-label-dt: hsl(234, 14%, 39%);
+        --clr-dm-label: #565973;
+        
+        --clr-GraySp-1: #585C7B;
+        --clr-GraySp-2: #565973;
+        --clr-GraySp-3: #FFFFFF;
+
+        --clr-GraySp-4: #EFF2FC; /*dl-app*/
+        --clr-GraySp-5: #F3F6FF; /*dl-app-desktop*/
+    
+        --clr-hero-bg: #0B0F19;
+    }
+
 body {
     font-family: "Manrope", system-ui;
     font-style: normal;
     font-size: 1rem;
-}
+    }
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
 /* Utility Classes */
 .d-inline-block {display: inline-block;}
@@ -171,16 +222,28 @@ a {
 }
 .btn-dl-app {
     width: 100%;
-    background-color: var(--clr-tabletGray);
+    background-color: var(--clr-GraySp-4);
     border-radius: .5em;
     display: grid;
     place-content: center;
+    z-index: 1;
     
     &:hover {
-        background-color: hsl(from var(--clr-tabletGray)h s calc( l - 3 ));
+        background-color: hsl(from var(--clr-GraySp-4)h s calc( l - 3 ));
     }
     &:active {
-        background-color: hsl(from var(--clr-tabletGray)h s calc( l + 3 ));
+        background-color: hsl(from var(--clr-GraySp-4)h s calc( l + 3 ));
+    }
+
+    @media ( width >= 1400px ) {
+        background-color: var(--clr-GraySp-5);
+
+        &:hover {
+            background-color: hsl(from var(--clr-GraySp-5)h s calc( l - 3 ));
+        }
+        &:active {
+            background-color: hsl(from var(--clr-GraySp-5)h s calc( l + 3 ));
+        }
     }
 }
 .btn-submit {
@@ -359,10 +422,7 @@ nav {
 
 /* Page 1 */
 header {
-    width: 100%;
-    background-color: #565973;
     background: var(--background-gradient);
-    /* background: var(--background-gradient), var(--clr-Gray900); - This is used for Dark Mode */
 }
 
 .page-1 {
@@ -413,7 +473,7 @@ header {
         height: 350px;
         aspect-ratio: 1;
         position: absolute;
-        z-index: -15;
+        z-index: 0;
         bottom: 0;
         right: -45px;
     }
@@ -422,7 +482,7 @@ header {
         width: 242px;
         aspect-ratio: 1;
         position: absolute;
-        z-index: -10;
+        z-index: 0;
         bottom: 0;
         right: -58px;
     }
@@ -431,7 +491,7 @@ header {
         width: 242px;
         aspect-ratio: 1;
         position: absolute;
-        z-index: -5;
+        z-index: 0;
         bottom: 0;
         right: -197px;
     }
