@@ -5,35 +5,37 @@
     --container-padding: 1rem;
 
     /*Colors*/
-    --clr-tabletGray: #131022; /*Klar*/
+    --clr-tabletGray: #131022;
     --clr-tabletLGray: #585C7B;
-    --clr-Gray900: #0B0F19; /*Klar*/
-    --clr-Gray800: #33354D; /*Klar*/
-    --clr-Gray700: #565973; /*Klar*/
-    --clr-Gray600: #9397AD; /*Klar*/
-    --clr-Gray500: #B4B7C9; /*Klar*/
-    --clr-Gray300: #E2E5F1; /*Klar*/
-    --clr-Gray100: #F3F6FF; /*Klar*/
-    --clr-White: hsl(0, 0%, 100%); /*Klar*/
-    --clr-Primary: hsl(239, 85%, 67%); /*Klar*/
-    --clr-Success: hsl(142, 71%, 45%); /*Klar*/
+    --clr-Gray900: #0B0F19;
+    --clr-Gray800: #33354D;
+    --clr-Gray700: #565973;
+    --clr-Gray600: #9397AD;
+    --clr-Gray500: #B4B7C9;
+    --clr-Gray300: #E2E5F1;
+    --clr-Gray100: #F3F6FF;
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Primary: hsl(239, 85%, 67%);
+    --clr-Success: hsl(142, 71%, 45%);
     
-    --clr-dm-label-dt: hsl(234, 14%, 39%); /*Klar*/
-    --clr-dm-label: hsl(250, 36%, 10%); /*Klar*/
+    --clr-dm-label-dt: hsl(234, 14%, 39%);
+    --clr-dm-label: hsl(250, 36%, 10%);
     
     --clr-SpWhite: hsl(0, 0%, 100%);
-    --clr-GraySp-1: #585C7B; /*Klar*/
-    --clr-GraySp-2: #565973; /*Klar*/
-    --clr-GraySp-3: #565973; /*Klar*/
-    --clr-GraySp-4: #131022; /*dl-app*/ /*Klar*/
-    --clr-GraySp-5: #0B0F19; /*dl-app-desktop*/ /*Klar*/
-    --clr-GraySp-6: #565973; /*Klar*/
-    --clr-GraySp-7: #E2E5F1; /*Klar*/
-    --clr-GraySp-8: #585C7B; /*Klar*/
+    --clr-GraySp-1: #585C7B;
+    --clr-GraySp-2: #565973;
+    --clr-GraySp-3: #565973;
+    --clr-GraySp-4: #131022; /*dl-app*/
+    --clr-GraySp-5: #0B0F19; /*dl-app-desktop*/
+    --clr-GraySp-6: #565973;
+    --clr-GraySp-7: #E2E5F1;
+    --clr-GraySp-8: #585C7B;
     --clr-GraySp-9: #585C7B;
     --clr-GraySp-10: #565973;
+    --clr-GraySp-11: #9397AD;
+    --clr-GraySp-12: #9397AD;
     
-    --clr-hero-bg: #FFFFFF; /*Klar*/
+    --clr-hero-bg: #FFFFFF;
     --clr-mb-faq-bg: #FFFFFF;
     
     --dropshadow-primary: 2px 5px 10px #0000002d;
@@ -47,8 +49,6 @@
 }
 
 /*Font styling*/
-
-
 h1 {color: var(--clr-tabletGray);font-size: 2.125rem;font-weight: var(--font-weight-ExtraBold);
     @media (width >= 768px) {font-size: 2.75rem;}
     @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 3.5rem;}}
@@ -67,41 +67,47 @@ h4 {color: var(--clr-tabletGray);font-size: 1.35rem;font-weight: var(--font-weig
 h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weight-ExtraBold);
 @media (width >= 1400px) {color: var(--clr-Gray900);}}
 
-.fs-sp-1 {color: var(--clr-GraySp-1);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
-@media (width >= 768px) {color: var(--clr-GraySp-2);}
-@media (width >= 1400px) {color: var(--clr-GraySp-3);}}
+.fs-sp-1 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
+@media (width >= 768px) {color: var(--clr-GraySp-6);}
+@media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
 .fs-sp-2 {color: var(--clr-GraySp-6);font-size: .875rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 1400px) {color: var(--clr-Gray700)}}
+    @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
 .fs-sp-3 {color: var(--clr-GraySp-8);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 768px) {color: var(--clr-tabletLGray);}
-    @media (width >= 1400px) {color: var(--clr-Gray700);}}
+    @media (width >= 768px) {color: var(--clr-GraySp-1);}
+    @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
 .fs-sp-4 {color: var(--clr-GraySp-9);font-size: .875rem;font-weight: var(--font-weight-Regular);}
 
 .fs-sp-5 {color: var(--clr-GraySp-9);font-size: 1rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 1400px) {color: var(--clr-GraySp-10)}}
+    @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
-.fs-1 {color: var(--clr-Gray600);font-size: .875rem;font-weight: var(--font-weight-Regular);}
+.fs-sp-6 {color: var(--clr-tabletLGray);font-size: 1rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
+
+.fs-1 {color: var(--clr-GraySp-11);font-size: .875rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {
+        color: var(--clr-GraySp-12);}}
 
 .fs-2 {color: var(--clr-Gray900);font-size: 1rem;font-weight: var(--font-weight-Bold);}
 
 .fs-3 {color: var(--clr-tabletGray);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
 @media (width >= 768px) {color: var(--clr-Gray900);}}
 
-.fs-4 {color: var(--clr-Gray700);font-size: 1.125rem;font-weight: var(--font-weight-Regular);}
+.fs-4 {color: var(--clr-GraySp-10);font-size: 1.125rem;font-weight: var(--font-weight-Regular);}
 
 .fs-5 {color: var(--clr-dm-label);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
-    @media (width >= 1400px) {color: var(--clr-dm-label-dt)}}
+    @media (width >= 1400px) {color: var(--clr-dm-label-dt);}}
 
 .fs-6 {color: var(--clr-Gray800);font-size: 1rem;font-weight: var(--font-weight-SemiBold);}
 
-.fs-7 {color: var(--clr-tabletLGray);font-size: .875rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 1400px) {color: var(--clr-Gray700)}}
+.fs-7 {color: var(--clr-GraySp-9);font-size: .875rem;font-weight: var(--font-weight-Regular);
+    line-height: 1.5;
+    @media (width >= 768px) {color: var(--clr-GraySp-10);}}
 
 .fs-8 {color: var(--clr-tabletLGray);font-size: 1rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 1400px) {color: var(--clr-Gray700)}}
+    @media (width >= 1400px) {color: var(--clr-Gray700);}}
 
 .fs-9 {color: var(--clr-White);font-size: .875rem;font-weight: var(--font-weight-SemiBold);}
 
@@ -122,8 +128,8 @@ h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weig
         color: hsl(from var(--clr-Success)h s calc( l + 3 ));
     }}
 
-.fs-13 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
-    @media (width >= 1400px) {color: var(--clr-Gray600)}}
+.fs-13 {color: var(--clr-GraySp-9);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
+    @media (width >= 1400px) {color: var(--clr-Gray600);}}
 
 *, *::before, *::after {
     margin: 0;
@@ -170,6 +176,7 @@ h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weig
 
         --clr-GraySp-9: #FFFFFFB3;
         --clr-GraySp-10: #FFFFFFB3;
+        --clr-GraySp-12: #FFFFFF80;
 
         --clr-hero-bg: #0B0F19;
         --clr-mb-faq-bg: #131022;
@@ -179,6 +186,7 @@ body {
     font-family: "Manrope", system-ui;
     font-style: normal;
     font-size: 1rem;
+    row-gap: 2.75rem;
     }
 
     a {
@@ -228,7 +236,7 @@ body {
     background-color: transparent;
     border-radius: .25em;
     border: none;
-    padding: .75em 1.5625em;
+    padding: .5em 1.5625em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,7 +260,6 @@ body {
     display: grid;
     place-content: center;
     z-index: 1;
-    padding-block: .5em;
     
     &:hover {
         background-color: hsl(from var(--clr-GraySp-4)h s calc( l - 3 ));
@@ -562,6 +569,10 @@ main {
 
     .app-features-header {
         text-align: center;
+
+        @media (width >= 1400px) {
+            text-align: left;
+        }
     }
 
     .af-icon {grid-area: af-icon;}
@@ -687,6 +698,7 @@ main {
 
 .fannie {
     display: grid;
+    column-gap: 1em;
     grid-template-columns: auto 1fr;
     grid-template-areas:
     "fannie-avatar fannie-name"
@@ -694,6 +706,7 @@ main {
 }
 .albert {
     display: grid;
+    column-gap: 1em;
     grid-template-columns: auto 1fr;
     grid-template-areas:
     "albert-avatar albert-name"
@@ -772,7 +785,7 @@ main {
 .page-6 {
     padding-top: 3.25rem;
     display: grid;
-    row-gap: 2.75rem;
+    gap: 2.5rem;
     grid-template-columns: auto;
     grid-template-areas:
     "p6-header"
@@ -841,6 +854,7 @@ main {
 
 .form-input {
     width: 100%;
+    background-color: var(--clr-White);
     font-size: 1rem;
     color: var(--clr-Gray500);
     font-weight: var(--font-weight-Regular);
@@ -878,7 +892,7 @@ footer {
 @media (width < 768px) {
     .border-faq-cont {
         border: 1px solid var(--clr-GraySp-7);
-        padding: 1rem;
+        padding-inline: 1.5rem;
         background-color: var(--clr-mb-faq-bg);
     }
 
@@ -987,11 +1001,6 @@ footer {
         display: block;
     }
 
-    .page-6 {
-        padding-top: 3.5rem;
-        .fs-4 {color: var(--clr-Gray700);}
-        .fs-7 {color: var(--clr-Gray700);}
-    }
     .p6-header {
         h3 {
             width: 65%;
@@ -1173,6 +1182,7 @@ header {
             row-gap: 0rem;
         }
     }
+
     .p3-img2 {display: grid;}
     .p3-img3 {display: grid;}
     .p3-img4 {display: grid;}
@@ -1248,6 +1258,10 @@ header {
         gap: 3.2rem;
         margin-top: 4.25rem;
         padding-inline: 7rem;
+    }
+
+    .form-input {
+        background-color: var(--clr-SpWhite);
     }
 
     .copyright {
