@@ -139,48 +139,47 @@ h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weig
     }
 
     /*Dark Mode functionality - Kod efter Joakims video Avancerad - Darkmode toggle*/
-    html {
-        color-scheme: light;
-    }
+html {
+    color-scheme: light;
+}
 
-    .dark {
-        color-scheme: dark;
+.dark {
+    color-scheme: dark;
 
-        --clr-tabletGray: #FFFFFF;
-        --clr-tabletLGray: #585C7B;
-        --clr-Gray900: #FFFFFF;
-        --clr-Gray800: #FFFFFFD9;
-        --clr-Gray700: #FFFFFF;
-        --clr-Gray600: #FFFFFF80;
-        --clr-Gray500: #FFFFFF66;
-        --clr-Gray300: #E2E5F1;
-        --clr-Gray100: #FFFFFF0A;
-        --clr-White: hsl(0, 0%, 100%);
-        --clr-Primary: hsl(239, 85%, 67%);
-        --clr-Success: hsl(142, 71%, 45%);
-        
-        --clr-dm-label-dt: hsl(234, 14%, 39%);
-        --clr-dm-label: #565973;
-        
-        --clr-SpWhite: #FFFFFF0A;
+    --clr-tabletGray: #FFFFFF;
+    --clr-tabletLGray: #585C7B;
+    --clr-Gray900: #FFFFFF;
+    --clr-Gray800: #FFFFFFD9;
+    --clr-Gray700: #FFFFFF;
+    --clr-Gray600: #FFFFFF80;
+    --clr-Gray500: #FFFFFF66;
+    --clr-Gray300: #E2E5F1;
+    --clr-Gray100: #FFFFFF0A;
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Primary: hsl(239, 85%, 67%);
+    --clr-Success: hsl(142, 71%, 45%);
+    --clr-dm-label-dt: hsl(234, 14%, 39%);
+    --clr-dm-label: #565973;
+    --clr-SpWhite: #FFFFFF0A;
+    --clr-GraySp-1: #585C7B;
+    --clr-GraySp-2: #565973;
+    --clr-GraySp-3: #FFFFFF;
+    --clr-GraySp-4: #EFF2FC; /*dl-app*/
+    --clr-GraySp-5: #F3F6FF; /*dl-app-desktop*/
+    --clr-GraySp-7: #FFFFFF26;
+    --clr-GraySp-8: #FFFFFF;
+    --clr-GraySp-9: #FFFFFFB3;
+    --clr-GraySp-10: #FFFFFFB3;
+    --clr-GraySp-12: #FFFFFF80;
+    --clr-hero-bg: #0B0F19;
+    --clr-mb-faq-bg: #131022;
 
-        --clr-GraySp-1: #585C7B;
-        --clr-GraySp-2: #565973;
-        --clr-GraySp-3: #FFFFFF;
-        
-        --clr-GraySp-4: #EFF2FC; /*dl-app*/
-        --clr-GraySp-5: #F3F6FF; /*dl-app-desktop*/
-        
-        --clr-GraySp-7: #FFFFFF26;
-        --clr-GraySp-8: #FFFFFF;
-
-        --clr-GraySp-9: #FFFFFFB3;
-        --clr-GraySp-10: #FFFFFFB3;
-        --clr-GraySp-12: #FFFFFF80;
-
-        --clr-hero-bg: #0B0F19;
-        --clr-mb-faq-bg: #131022;
-    }
+    .silicon-icon {content: url('images/dm-Silicon-logotype.svg');}
+    .appstore-icon {content: url('images/dm-appstore.svg');}
+    .googleplay-icon {content: url('images/dm-googleplay.svg');}
+    .show-more-icon {content: url('images/dm-show-more-icon.svg');}
+    .next-icon {content: url('images/dm-next-btn.svg');}
+}
 
 body {
     font-family: "Manrope", system-ui;
@@ -352,7 +351,10 @@ body {
 }
 
 /* Handle img scaling - Primarily used for buttonimages */
-.silicon-icon {height: 2.75em;}
+.silicon-icon {
+    height: 2.75em;
+    content: url('images/Silicon-logotype.svg');
+}
 .mobile-icon {height: 2.25em;}
 .sign-in-icon {height: 1.125em;}
 .learn-more-icon {height: 1.25em;}
@@ -367,10 +369,10 @@ body {
 .newsletter-icon {height: 1.25em;}
 .next-icon {height: .375em;
     @media (width >= 1400px) {height: .5em;}}
-.appstore-icon {width: 7.75em;
+.appstore-icon {height: 2.125em;
     @media (width >= 768px) {width: 92px;}
     @media (width >= 1400px) {width: 8.5em;}}
-.googleplay-icon {width: 7.75em;
+.googleplay-icon {height: 2.125em;
     @media (width >= 768px) {width: 92px;}
     @media (width >= 1400px) {width: 8.5em;}}
 
