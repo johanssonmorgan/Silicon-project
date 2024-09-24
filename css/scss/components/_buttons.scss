@@ -1,0 +1,114 @@
+/* Primary button */
+.btn {
+    background-color: transparent;
+    border-radius: .25em;
+    border: none;
+    padding: .5em 1.5625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--clr-Primary);
+    text-decoration: none;
+    
+    &:hover {
+        background-color: hsl(from var(--clr-Primary)h s calc( l - 3 ));
+    }
+    &:active {
+        background-color: hsl(from var(--clr-Primary)h s calc( l + 3 ));
+    }
+}
+.btn-dl-app {
+    width: 100%;
+    background-color: var(--clr-GraySp-4);
+    border-radius: .5em;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    
+    &:hover {
+        background-color: hsl(from var(--clr-GraySp-4)h s calc( l - 3 ));
+    }
+    &:active {
+        background-color: hsl(from var(--clr-GraySp-4)h s calc( l + 3 ));
+    }
+
+    @media ( width >= 1400px ) {
+        background-color: var(--clr-GraySp-5);
+
+        &:hover {
+            background-color: hsl(from var(--clr-GraySp-5)h s calc( l - 3 ));
+        }
+        &:active {
+            background-color: hsl(from var(--clr-GraySp-5)h s calc( l + 3 ));
+        }
+    }
+}
+.btn-submit {
+    background-color: var(--clr-Primary);
+    color: var(--clr-White);
+    font-size: 1rem;
+    font-weight: var(--font-weight-SemiBold);
+    border-radius: 0 .5em .5em 0;
+    padding: 1em;
+    border: 1px solid var(--clr-Primary);
+}
+
+/* Mobile button */
+    .nav-mobile-btn {
+        background-color: transparent;
+        border: none;
+    }
+
+/* Round buttons */
+.round-btn {
+    border: 0;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.round-btn-large {
+    width: 2.75rem;
+    aspect-ratio: 1;
+}
+.round-btn-small {
+    width: 2.25rem;
+    aspect-ratio: 1;
+}
+.btn-discover-more {
+    background-color: var(--clr-SpWhite);
+
+    &:hover {
+        background-color: hsl(from var(--clr-SpWhite)h s calc( l - 3 )) 
+    }
+
+    &:active {
+        background-color: var(--clr-SpWhite);
+    }
+}
+.btn-faq-open {
+    background-color: var(--clr-Gray100);
+
+    &:hover {
+        background-color: hsl(from var(--clr-Gray100)h s calc( l - 3 )) 
+    }
+
+    &:active {
+        background-color: var(--clr-Gray100);
+    }
+}
+.btn-faq-close {
+    background-color: var(--clr-Primary);
+
+    &:hover {
+        background-color: hsl(from var(--clr-Primary)h s calc( l - 3 )) 
+    }
+
+    &:active {
+        background-color: var(--clr-Primary);
+    }
+}

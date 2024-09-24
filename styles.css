@@ -5,41 +5,35 @@
     --container-padding: 1rem;
 
     /*Colors*/
-    --clr-tabletGray: #131022;
-    --clr-tabletLGray: #585C7B;
-    --clr-Gray900: #0B0F19;
-    --clr-Gray800: #33354D;
+    --clr-Gray100: #f3f6ff;
+    --clr-Gray300: #e2e5f1;
+    --clr-Gray500: #b4b7c9;
+    --clr-Gray600: #9397ad;
     --clr-Gray700: #565973;
-    --clr-Gray600: #9397AD;
-    --clr-Gray500: #B4B7C9;
-    --clr-Gray300: #E2E5F1;
-    --clr-Gray100: #F3F6FF;
-    --clr-White: hsl(0, 0%, 100%);
-    --clr-Primary: hsl(239, 85%, 67%);
-    --clr-Success: hsl(142, 71%, 45%);
-    
-    --clr-dm-label-dt: hsl(234, 14%, 39%);
-    --clr-dm-label: hsl(250, 36%, 10%);
-    
-    --clr-SpWhite: hsl(0, 0%, 100%);
-    --clr-GraySp-1: #585C7B;
-    --clr-GraySp-2: #565973;
-    --clr-GraySp-3: #565973;
-    --clr-GraySp-4: #131022; /*dl-app*/
-    --clr-GraySp-5: #0B0F19; /*dl-app-desktop*/
+    --clr-Gray800: #33354d;
+    --clr-Gray900: #0b0f19;
+    --clr-White: #ffffff;
+    --clr-SpWhite: #ffffff;
+    --clr-Primary: #6366f2;
+    --clr-Success: #21c45d;
+    --clr-dm-label-dt: #565871;
+    --clr-dm-label: #131023;
+    --clr-GraySp-1: #585c7b;
+    --clr-GraySp-2: #131022;
+    --clr-GraySp-3: #9397ad;
+    --clr-GraySp-4: #131022;
+    --clr-GraySp-5: #0b0f19;
     --clr-GraySp-6: #565973;
-    --clr-GraySp-7: #E2E5F1;
-    --clr-GraySp-8: #585C7B;
-    --clr-GraySp-9: #585C7B;
+    --clr-GraySp-7: #e2e5f1;
+    --clr-GraySp-8: #585c7b;
+    --clr-GraySp-9: #585c7b;
     --clr-GraySp-10: #565973;
-    --clr-GraySp-11: #9397AD;
-    --clr-GraySp-12: #9397AD;
-    
-    --clr-hero-bg: #FFFFFF;
-    --clr-mb-faq-bg: #FFFFFF;
-    
+    --clr-GraySp-11: #9397ad;
+    --clr-bg: #ffffff;
+    --clr-mb-faq-bg: #ffffff;
+
     --dropshadow-primary: 2px 5px 10px #0000002d;
-    --background-gradient: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%), var(--clr-hero-bg);
+    --background-gradient: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%), var(--clr-bg);
 
 /*Font Weights*/
     --font-weight-Regular: 400;
@@ -49,25 +43,25 @@
 }
 
 /*Font styling*/
-h1 {color: var(--clr-tabletGray);font-size: 2.125rem;font-weight: var(--font-weight-ExtraBold);
+h1 {color: var(--clr-GraySp-2);font-size: 2.125rem;font-weight: var(--font-weight-ExtraBold);
     @media (width >= 768px) {font-size: 2.75rem;}
     @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 3.5rem;}}
     
-h2 {color: var(--clr-tabletGray);font-size: 1.75rem;font-weight: var(--font-weight-ExtraBold);
+h2 {color: var(--clr-GraySp-2);font-size: 1.75rem;font-weight: var(--font-weight-ExtraBold);
 @media (width >= 768px) {font-size: 2.125rem;}
 @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 2.5rem;}}
 
-h3 {color: var(--clr-tabletGray);font-size: 1.5rem;font-weight: var(--font-weight-ExtraBold);
+h3 {color: var(---clr-GraySp-2);font-size: 1.5rem;font-weight: var(--font-weight-ExtraBold);
 @media (width >= 768px) {color: var(--clr-Gray900);font-size: 2rem;}}
 
-h4 {color: var(--clr-tabletGray);font-size: 1.35rem;font-weight: var(--font-weight-ExtraBold);
+h4 {color: var(--clr-GraySp-2);font-size: 1.35rem;font-weight: var(--font-weight-ExtraBold);
 @media (width >= 768px) {font-size: 1.42rem;}
 @media (width >= 1400px) {color: var(--clr-Gray900);font-size: 1.5rem;}}
 
-h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weight-ExtraBold);
+h5 {color: var(--clr-GraySp-2);font-size: 1.25rem;font-weight: var(--font-weight-ExtraBold);
 @media (width >= 1400px) {color: var(--clr-Gray900);}}
 
-.fs-sp-1 {color: var(--clr-tabletLGray);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
+.fs-sp-1 {color: var(--clr-GraySp-1);font-size: 1.125rem;font-weight: var(--font-weight-Regular);
 @media (width >= 768px) {color: var(--clr-GraySp-6);}
 @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
@@ -83,17 +77,17 @@ h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weig
 .fs-sp-5 {color: var(--clr-GraySp-9);font-size: 1rem;font-weight: var(--font-weight-Regular);
     @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
-.fs-sp-6 {color: var(--clr-tabletLGray);font-size: 1rem;font-weight: var(--font-weight-Regular);
+.fs-sp-6 {color: var(--clr-GraySp-1);font-size: 1rem;font-weight: var(--font-weight-Regular);
     @media (width >= 1400px) {color: var(--clr-GraySp-10);}}
 
 .fs-1 {color: var(--clr-GraySp-11);font-size: .875rem;font-weight: var(--font-weight-Regular);
     @media (width >= 1400px) {
-        color: var(--clr-GraySp-12);}}
+        color: var(--clr-GraySp-3);}}
 
 .fs-2 {color: var(--clr-Gray900);font-size: 1rem;font-weight: var(--font-weight-Bold);}
 
-.fs-3 {color: var(--clr-tabletGray);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
-@media (width >= 768px) {color: var(--clr-Gray900);}}
+.fs-3 {color: var(--clr-GraySp-2);font-size: 1rem;font-weight: var(--font-weight-SemiBold);
+    @media (width >= 768px) {color: var(--clr-Gray900);}}
 
 .fs-4 {color: var(--clr-GraySp-10);font-size: 1.125rem;font-weight: var(--font-weight-Regular);}
 
@@ -106,7 +100,7 @@ h5 {color: var(--clr-tabletGray);font-size: 1.25rem;font-weight: var(--font-weig
     line-height: 1.5;
     @media (width >= 768px) {color: var(--clr-GraySp-10);}}
 
-.fs-8 {color: var(--clr-tabletLGray);font-size: 1rem;font-weight: var(--font-weight-Regular);
+.fs-8 {color: var(--clr-GraySp-1);font-size: 1rem;font-weight: var(--font-weight-Regular);
     @media (width >= 1400px) {color: var(--clr-Gray700);}}
 
 .fs-9 {color: var(--clr-White);font-size: .875rem;font-weight: var(--font-weight-SemiBold);}
@@ -146,32 +140,24 @@ html {
 .dark {
     color-scheme: dark;
 
-    --clr-tabletGray: #FFFFFF;
-    --clr-tabletLGray: #585C7B;
-    --clr-Gray900: #FFFFFF;
-    --clr-Gray800: #FFFFFFD9;
-    --clr-Gray700: #FFFFFF;
-    --clr-Gray600: #FFFFFF80;
-    --clr-Gray500: #FFFFFF66;
-    --clr-Gray300: #E2E5F1;
-    --clr-Gray100: #FFFFFF0A;
-    --clr-White: hsl(0, 0%, 100%);
-    --clr-Primary: hsl(239, 85%, 67%);
-    --clr-Success: hsl(142, 71%, 45%);
-    --clr-dm-label-dt: hsl(234, 14%, 39%);
+    --clr-Gray100: #ffffff0a;
+    --clr-Gray500: #ffffff66;
+    --clr-Gray600: #ffffff80;
+    --clr-Gray700: #ffffff;
+    --clr-Gray800: #ffffffd9;
+    --clr-Gray900: #ffffff;
+
+    --clr-SpWhite: #ffffff0a;
     --clr-dm-label: #565973;
-    --clr-SpWhite: #FFFFFF0A;
-    --clr-GraySp-1: #585C7B;
-    --clr-GraySp-2: #565973;
-    --clr-GraySp-3: #FFFFFF;
-    --clr-GraySp-4: #EFF2FC; /*dl-app*/
-    --clr-GraySp-5: #F3F6FF; /*dl-app-desktop*/
-    --clr-GraySp-7: #FFFFFF26;
-    --clr-GraySp-8: #FFFFFF;
-    --clr-GraySp-9: #FFFFFFB3;
-    --clr-GraySp-10: #FFFFFFB3;
-    --clr-GraySp-12: #FFFFFF80;
-    --clr-hero-bg: #0B0F19;
+    --clr-GraySp-2: #ffffff;
+    --clr-GraySp-3: #ffffff80;
+    --clr-GraySp-4: #eff2fC;
+    --clr-GraySp-5: #f3f6ff;
+    --clr-GraySp-7: #ffffff26;
+    --clr-GraySp-8: #ffffff;
+    --clr-GraySp-9: #ffffffb3;
+    --clr-GraySp-10: #ffffffb3;
+    --clr-bg: #0B0f19;
     --clr-mb-faq-bg: #131022;
 
     .silicon-icon {
@@ -238,7 +224,7 @@ body {
 .list-reset {list-style-type: none;}
 
 /* Primary button */
-.btn-properties {
+.btn {
     background-color: transparent;
     border-radius: .25em;
     border: none;
@@ -286,8 +272,9 @@ body {
     }
 }
 .btn-submit {
-    font-size: 1rem;
+    background-color: var(--clr-Primary);
     color: var(--clr-White);
+    font-size: 1rem;
     font-weight: var(--font-weight-SemiBold);
     border-radius: 0 .5em .5em 0;
     padding: 1em;
@@ -301,7 +288,7 @@ body {
     }
 
 /* Round buttons */
-.round-btn-properties {
+.round-btn {
     border: 0;
     border-radius: 50%;
     display: grid;
@@ -541,7 +528,7 @@ nav {
 }
 
 main {
-    background-color: var(--clr-hero-bg);
+    background-color: var(--clr-bg);
 }
 
 /* Page 2 */
@@ -774,7 +761,7 @@ main {
     .contact-mobile {
         display: flex;
 
-        .btn-properties {
+        .btn {
             padding-block: 1em;
         }
     }
@@ -891,7 +878,7 @@ main {
 }
 
 footer {
-    background-color: var(--clr-hero-bg);
+    background-color: var(--clr-bg);
 }
 
 .copyright {
@@ -1044,7 +1031,7 @@ footer {
         width: 100%;
     }
     .p6-contact {
-        .btn-properties {
+        .btn {
             padding-inline: 0;
         }
     }
