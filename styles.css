@@ -174,11 +174,18 @@ html {
     --clr-hero-bg: #0B0F19;
     --clr-mb-faq-bg: #131022;
 
-    .silicon-icon {content: url('images/dm-Silicon-logotype.svg');}
-    .appstore-icon {content: url('images/dm-appstore.svg');}
-    .googleplay-icon {content: url('images/dm-googleplay.svg');}
-    .show-more-icon {content: url('images/dm-show-more-icon.svg');}
-    .next-icon {content: url('images/dm-next-btn.svg');}
+    .silicon-icon {
+        content: url(images/dm-Silicon-logotype.svg);}
+    .appstore-icon {
+        content: url(images/dm-appstore.svg);}
+    .googleplay-icon {
+        content: url(images/dm-googleplay.svg);}
+    .show-more-icon {
+        content: url(images/dm-show-more-icon.svg);}
+    .next-icon {
+        content: url(images/dm-next-btn.svg);}
+    .mobile-icon {
+        content: url(images/dm-mobile-menu-button.svg);}
 }
 
 body {
@@ -766,6 +773,10 @@ main {
     
     .contact-mobile {
         display: flex;
+
+        .btn-properties {
+            padding-block: 1em;
+        }
     }
 }
 
