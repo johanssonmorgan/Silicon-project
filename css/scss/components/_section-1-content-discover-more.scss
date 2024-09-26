@@ -1,0 +1,11 @@
+.discover-more {
+    grid-area: discover-more;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    @include desktop {
+        align-self: end;
+    }
+}

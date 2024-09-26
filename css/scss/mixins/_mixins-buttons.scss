@@ -1,0 +1,24 @@
+@mixin btn {
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+@mixin btn-circle {
+    @include btn;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+
+@mixin btn-circle-small {
+    @include btn-circle;
+    width: 2.25rem;
+}
+
+@mixin btn-circle-large {
+    @include btn-circle;
+    width: 2.75rem;
+}

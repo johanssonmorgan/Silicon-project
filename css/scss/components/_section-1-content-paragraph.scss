@@ -1,0 +1,12 @@
+.paragraph {
+    grid-area: paragraph;
+
+    @include tablet {
+        text-align: left;
+        width: 80%;
+    }
+
+    @include desktop {
+        width: 70%;
+    }
+}

@@ -1,0 +1,57 @@
+.s1-images {
+    grid-area: s1-images;
+    display: none;
+    position: relative;
+    min-height: 420px;
+
+
+    @include tablet {
+        display: block;
+        
+        .phone-shadow {
+            height: 350px;
+            aspect-ratio: 1;
+            position: absolute;
+            bottom: 0;
+            right: -45px;
+            z-index: 0;
+        }
+        .phone-behind{
+            height: 335px;
+            width: 242px;
+            aspect-ratio: 1;
+            position: absolute;
+            bottom: 0;
+            right: -58px;
+            z-index: 0;
+        }
+        .phone-front{
+            height: 420px;
+            width: 242px;
+            aspect-ratio: 1;
+            position: absolute;
+            bottom: 0;
+            right: -197px;
+            z-index: 0;
+        }
+    }
+
+    @include desktop {
+        min-height: 680px;
+
+        .phone-shadow {
+            height: auto;
+            right: 75px;
+        }
+        .phone-behind{
+            height: 548px;
+            width: 402px;
+            right: -85px;
+        }
+        .phone-front{
+            width: 402px;
+            height: 688px;
+            right: -315px;
+        }
+    }
+}

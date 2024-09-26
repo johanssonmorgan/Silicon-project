@@ -1,0 +1,28 @@
+@import "./section-1-content-paragraph";
+@import "./section-1-content-app-buttons";
+@import "./section-1-content-discover-more";
+
+.s1-content {
+    grid-area: s1-content;
+    display: grid;
+    grid-template-areas: 
+    "paragraph"
+    "app-buttons"
+    "discover-more";
+    gap: 3rem;
+
+    @include tablet {
+        padding-top: 80px;
+        max-width: 650px;
+        padding-bottom: 3rem;
+        gap: 2.2rem;
+        justify-items: left;
+    }
+
+    @include desktop {
+        max-width: 650px;
+        padding-top: 0;
+        gap: 2.5rem;
+        grid-template-rows: auto auto 1fr;
+    }
+}

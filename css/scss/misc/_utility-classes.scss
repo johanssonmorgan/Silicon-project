@@ -1,0 +1,108 @@
+.d-inline-block {
+    display: inline-block;
+}
+.center-text {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-inline: auto;
+}
+.my-auto {
+    margin-block: auto;
+}
+.d-flex {
+    display: flex;
+}
+.flex-align {
+    display: flex; 
+    align-items: center;
+}
+.br-05 {
+    border-radius: .5em;
+}
+.gap-05 {
+    gap: .5rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-15 {
+    gap: 1.5rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.mb-05 {
+    margin-bottom: .5rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-3 {
+    margin-bottom: 3rem;
+}
+.mb-4 {
+    margin-bottom: 4rem;
+}
+.w-auto {
+    width: auto;
+}
+.w-10 {
+    width: 10%;
+}
+.w-20 {
+    width: 20%;
+}
+.w-30 {
+    width: 30%;
+}
+.w-40 {
+    width: 40%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-60 {
+    width: 60%;
+}
+.w-65 {
+    width: 65%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-80 {
+    width: 80%;
+}
+.w-85 {
+    width: 85%;
+}
+.w-90 {
+    width: 90%;
+}
+.bg-white {
+    background-color: $SpWhite;
+}
+.dropshadow{
+    box-shadow: $dropshadow-primary;
+}
+.border-contact {
+    border: 1px solid $GraySp-7;
+    padding: 1.5rem;
+    width: 12.25rem;
+    height: fit-content;
+}
+.border-logoipsum {
+    display: grid;
+    place-items: center;
+    width: 158px;
+    height: 98px;border: 1px solid $GraySp-7;
+    border-radius: 0.5rem;
+}

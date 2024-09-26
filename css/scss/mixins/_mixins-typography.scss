@@ -1,0 +1,45 @@
+@mixin text {
+    font-family: "Manrope", system-ui;
+    font-style: normal;
+}
+
+@mixin headers {
+    color: $GraySp-2;
+    font-weight: $fw-ExtraBold;
+}
+
+@mixin text-small-regular {
+    @include text;
+    font-size: .875rem;
+    font-weight: $fw-Regular;
+}
+
+@mixin text-small-semibold {
+    @include text;
+    font-size: .875rem;
+    font-weight: $fw-SemiBold;
+}
+
+@mixin text-medium-regular {
+    @include text;
+    font-size: 1rem;
+    font-weight: $fw-Regular;
+}
+
+@mixin text-medium-semibold {
+    @include text;
+    font-size: 1rem;
+    font-weight: $fw-SemiBold;
+}
+
+@mixin text-medium-bold {
+    @include text;
+    font-size: 1rem;
+    font-weight: $fw-Bold;
+}
+
+@mixin text-large {
+    @include text;
+    font-size: 1.125rem;
+    font-weight: $fw-Regular;
+}

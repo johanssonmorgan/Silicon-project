@@ -1,0 +1,11 @@
+.app-buttons {
+    grid-area: app-buttons;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @include tablet {
+        flex-direction: row;
+    }
+}

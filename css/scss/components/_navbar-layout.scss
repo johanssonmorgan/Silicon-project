@@ -1,0 +1,20 @@
+@import "./navbar-features";
+@import "./navbar-sign-in";
+
+nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    gap: 1.5rem;
+    padding-block: 1rem;
+
+    @include tablet {
+        gap: 3.7rem;
+    }
+
+    @include desktop {
+        grid-template-columns: auto 1fr auto auto;
+        gap: 1.5rem;
+        padding-block: 1rem;
+    }
+}

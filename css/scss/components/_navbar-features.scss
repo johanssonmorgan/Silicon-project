@@ -1,0 +1,7 @@
+.features {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}

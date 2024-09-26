@@ -1,114 +1,126 @@
-/* Primary button */
-.btn {
-    background-color: transparent;
-    border-radius: .25em;
-    border: none;
-    padding: .5em 1.5625em;
+.btn-primary {
+    @include btn;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    background-color: $Primary;
+    border-radius: .25em;
+    padding: .5em 1.5625em;
+    @include color-adjustments($Primary);
 }
-.btn-primary {
-    background-color: var(--clr-Primary);
-    text-decoration: none;
-    
-    &:hover {
-        background-color: hsl(from var(--clr-Primary)h s calc( l - 3 ));
-    }
-    &:active {
-        background-color: hsl(from var(--clr-Primary)h s calc( l + 3 ));
+
+.btn-burger {
+    @include btn;
+
+    @include desktop {
+        display: none;
     }
 }
-.btn-dl-app {
+
+.btn-app {
+    @include btn;
+    display: grid;
+    place-items: center;
     width: 100%;
-    background-color: var(--clr-GraySp-4);
+    background-color: $GraySp-4;
     border-radius: .5em;
-    display: grid;
-    place-content: center;
+    padding: .5em 1.5625em;
     z-index: 1;
-    
-    &:hover {
-        background-color: hsl(from var(--clr-GraySp-4)h s calc( l - 3 ));
-    }
-    &:active {
-        background-color: hsl(from var(--clr-GraySp-4)h s calc( l + 3 ));
-    }
-
-    @media ( width >= 1400px ) {
-        background-color: var(--clr-GraySp-5);
-
-        &:hover {
-            background-color: hsl(from var(--clr-GraySp-5)h s calc( l - 3 ));
-        }
-        &:active {
-            background-color: hsl(from var(--clr-GraySp-5)h s calc( l + 3 ));
-        }
+    @include color-adjustments($GraySp-4);
+    @include desktop {
+        background-color: $GraySp-5;
+        @include color-adjustments($GraySp-5);
     }
 }
+
 .btn-submit {
-    background-color: var(--clr-Primary);
-    color: var(--clr-White);
-    font-size: 1rem;
-    font-weight: var(--font-weight-SemiBold);
-    border-radius: 0 .5em .5em 0;
+    @include btn;
+    background-color: $Primary;
+    color: $White;
     padding: 1em;
-    border: 1px solid var(--clr-Primary);
+    border-radius: 0 .5em .5em 0;
+    font-size: 1rem;
+    border: 1px solid $Primary;
+    @include color-adjustments($Primary)
 }
 
-/* Mobile button */
-    .nav-mobile-btn {
-        background-color: transparent;
-        border: none;
-    }
-
-/* Round buttons */
-.round-btn {
-    border: 0;
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
-    overflow: hidden;
-    cursor: pointer;
+.btn-discover {
+    @include btn-circle-large;
+    background-color: $SpWhite;
+    @include color-adjustments($SpWhite)
 }
-.round-btn-large {
-    width: 2.75rem;
-    aspect-ratio: 1;
-}
-.round-btn-small {
-    width: 2.25rem;
-    aspect-ratio: 1;
-}
-.btn-discover-more {
-    background-color: var(--clr-SpWhite);
 
-    &:hover {
-        background-color: hsl(from var(--clr-SpWhite)h s calc( l - 3 )) 
-    }
+.btn-open {
+    @include btn-circle-small;
+    background-color: $Gray100;
+    @include color-adjustments($Gray100);
+}
 
-    &:active {
-        background-color: var(--clr-SpWhite);
+.btn-close {
+    @include btn-circle-small;
+    background-color: $Primary;
+    @include color-adjustments($Primary);
+}
+
+
+// Dark Mode Toggle - Used the code provided by Hans in one of his Tips & Trix videos - I made adjustments to the code to better fit my overall layout
+
+.btn-toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    
+    .label {
+        display: none;
     }
 }
-.btn-faq-open {
-    background-color: var(--clr-Gray100);
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    
+    input {
+        opacity: 0;
 
-    &:hover {
-        background-color: hsl(from var(--clr-Gray100)h s calc( l - 3 )) 
+        &:checked + .slider {
+            background-color: $Primary;
+        }
+
+        &:focus + .slider {
+            box-shadow: $dropshadow-primary;
+        }
+
+        &:checked + .slider::before{
+            transform: translateX(18px);
+            box-shadow: $dropshadow-primary;
+        }
     }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $Gray600;
+        transition: .2s;
 
-    &:active {
-        background-color: var(--clr-Gray100);
+        &::before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            bottom: 2.5px;
+            left: 3px;
+            background-color: $White;
+        }
     }
-}
-.btn-faq-close {
-    background-color: var(--clr-Primary);
+    .slider.round {
+        border-radius: 35px;
 
-    &:hover {
-        background-color: hsl(from var(--clr-Primary)h s calc( l - 3 )) 
-    }
-
-    &:active {
-        background-color: var(--clr-Primary);
+        &::before {
+            border-radius: 50%;
+        }
     }
 }

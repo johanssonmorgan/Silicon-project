@@ -2,7 +2,6 @@
 
 :root {
     --transition-time: all 0.2s;
-    --container-padding: 1rem;
 
     /*Colors*/
     --clr-Gray100: #f3f6ff;
@@ -340,7 +339,7 @@ body {
 
 .container {
     width: 100%;
-    padding-inline: var(--container-padding);
+    padding-inline: 1rem;
     margin-inline: auto;
 }
 
@@ -450,7 +449,7 @@ nav {
     align-items: center;
     grid-template-columns: 1fr auto auto;
     gap: 1.5rem;
-    padding-block: var(--container-padding);
+    padding-block: 1rem;
 }
 
 /* Page 1 */
@@ -493,7 +492,7 @@ nav {
     }
 }
 
-.p1-images {
+.s1-images {
     grid-area: p1-images;
     display: none;
     position: relative;
@@ -899,7 +898,7 @@ footer {
     .faq-1-opened {
         padding-block: 1rem;
     }
-
+    
     .faq-divider-top {
         border-radius: 0;
         border-top: 1px solid var(--clr-GraySp-7);
@@ -1091,7 +1090,7 @@ footer {
         align-items: center;
         grid-template-columns: auto 1fr auto auto;
         gap: 1.5rem;
-        padding-block: var(--container-padding);
+        padding-block: 1rem;
     }
 
 header {

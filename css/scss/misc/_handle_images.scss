@@ -1,0 +1,84 @@
+.silicon-icon {
+    height: 2.75em;
+}
+
+.mobile-icon {
+    height: 2.25em;
+}
+
+.sign-in-icon {
+    eight: 1.125em;
+}
+
+.learn-more-icon {
+    height: 1.25em;
+}
+
+.quotation-icon {
+    height: 1.25em;
+}
+
+.stars-rating {
+    height: 1em;
+}
+
+.reviewer-avatar {
+    height: 3em;
+}
+
+.show-more-icon {
+    height:1.25em;
+}
+
+.show-less-icon {
+    height:1.25em;
+}
+
+.contact-phone-icon {
+    height: 1.75em;
+}
+
+.contact-text-icon {
+    height: 1.75em;
+}
+
+.newsletter-bell-icon {
+    height: 4.875em;
+}
+
+.newsletter-icon {
+    height: 1.25em;
+}
+
+.next-icon {
+    height: .375em;
+    @media (width >= 1400px) {
+        height: .5em;
+    }
+}
+
+.appstore-icon {
+    height: 2.125em;
+    @media (width >= 768px) {
+        width: 92px;
+    }
+
+    @media (width >= 1400px) {
+        width: 8.5em;
+    }
+}
+
+.googleplay-icon {
+    height: 2.125em;
+    @media (width >= 768px) {
+        width: 92px;
+    }
+
+    @media (width >= 1400px) {
+        width: 8.5em;
+    }
+}
+
+header {
+    background: var(--background-gradient);
+}
