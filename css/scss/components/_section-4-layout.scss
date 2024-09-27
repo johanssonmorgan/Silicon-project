@@ -1,0 +1,13 @@
+@import "./section-4-top-left-card";
+@import "./section-4-bottom-right-card";
+
+.section-4 {
+    display: none;
+
+    @include desktop {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        padding: 7.6rem;
+    }
+}

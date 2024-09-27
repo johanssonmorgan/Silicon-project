@@ -1,0 +1,14 @@
+.section-4-bottom-right-header {grid-area: section-4-bottom-right-header;}
+.section-4-bottom-right-text-left {grid-area: section-4-bottom-right-text-left;}
+.section-4-bottom-right-text-right {grid-area: section-4-bottom-right-text-right;}
+.section-4-bottom-right-button {grid-area: section-4-bottom-right-button;}
+
+.section-4-bottom-right-card {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "section-4-bottom-right-header section-4-bottom-right-header"
+    "section-4-bottom-right-text-left section-4-bottom-right-text-right"
+    "section-4-bottom-right-button section-4-bottom-right-button";
+}
