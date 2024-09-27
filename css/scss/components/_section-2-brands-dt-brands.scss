@@ -1,0 +1,7 @@
+.brand-5, .brand-6 {
+    display: none;
+
+    @include desktop {
+        display: grid;
+    }
+}

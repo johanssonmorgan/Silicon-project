@@ -21,6 +21,10 @@ body {
         list-style-type: none;
     }
 
-    header {
-        background: $background-gradient;
-    }
+main {
+    background-color: $bg;
+}
+
+footer {
+    background-color: $bg;
+}

@@ -1,0 +1,13 @@
+.border-logoipsum {
+    border: 1px solid $GraySp-7;
+    display: grid;
+    place-items: center;
+    width: 158px;
+    height: 98px;
+    border-radius: 0.5rem;
+
+    @include desktop {
+        width: 196px;
+        height: 100px;
+    }
+}

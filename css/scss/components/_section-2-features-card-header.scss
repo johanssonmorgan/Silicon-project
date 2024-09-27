@@ -1,0 +1,8 @@
+.features-card-header {
+    grid-area: features-card-header;
+    text-align: center;
+
+    @media (width >= 1400px) {
+        text-align: left;
+    }
+}

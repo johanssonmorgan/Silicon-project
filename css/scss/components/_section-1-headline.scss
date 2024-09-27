@@ -1,3 +1,18 @@
 .s1-headline {
     grid-area: s1-headline;
+
+    @include tablet {
+        padding-top: 2rem;
+        max-width: 60%;
+    }
+
+    @include desktop {
+        padding-top: 3rem;
+        max-width: 650px;
+    
+        h1{
+            text-align: left;
+            width: 80%;
+        }
+    }
 }

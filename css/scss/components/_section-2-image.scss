@@ -1,0 +1,7 @@
+.section-2-image{
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}

@@ -6,7 +6,7 @@
     background-color: $Primary;
     border-radius: .25em;
     padding: .5em 1.5625em;
-    @include color-adjustments($Primary);
+    @include color-adjustments-bg($Primary);
 }
 
 .btn-burger {
@@ -26,10 +26,10 @@
     border-radius: .5em;
     padding: .5em 1.5625em;
     z-index: 1;
-    @include color-adjustments($GraySp-4);
+    @include color-adjustments-bg($GraySp-4);
     @include desktop {
         background-color: $GraySp-5;
-        @include color-adjustments($GraySp-5);
+        @include color-adjustments-bg($GraySp-5);
     }
 }
 
@@ -41,25 +41,25 @@
     border-radius: 0 .5em .5em 0;
     font-size: 1rem;
     border: 1px solid $Primary;
-    @include color-adjustments($Primary)
+    @include color-adjustments-bg($Primary)
 }
 
 .btn-discover {
     @include btn-circle-large;
     background-color: $SpWhite;
-    @include color-adjustments($SpWhite)
+    @include color-adjustments-bg($SpWhite)
 }
 
 .btn-open {
     @include btn-circle-small;
     background-color: $Gray100;
-    @include color-adjustments($Gray100);
+    @include color-adjustments-bg($Gray100);
 }
 
 .btn-close {
     @include btn-circle-small;
     background-color: $Primary;
-    @include color-adjustments($Primary);
+    @include color-adjustments-bg($Primary);
 }
 
 
@@ -72,6 +72,10 @@
     
     .label {
         display: none;
+
+        @include tablet {
+            display: block;
+        }
     }
 }
 .toggle-switch {

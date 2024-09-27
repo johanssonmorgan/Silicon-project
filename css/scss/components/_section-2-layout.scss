@@ -1,6 +1,10 @@
 @import "./section-2-brands";
+@import "./section-2-content";
 
 .section-2 {
-    display: grid;
-    
+    padding-block: 2.6rem;
+
+    @include tablet {
+        padding-top: 0;
+    }
 }

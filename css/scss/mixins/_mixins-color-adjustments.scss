@@ -1,4 +1,4 @@
-@mixin color-adjustments($color) {
+@mixin color-adjustments-bg($color) {
     &:hover {
         background-color: darken($color, 3%);
     }

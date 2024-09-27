@@ -1,25 +1,17 @@
+@import "./section-2-brands-border";
+@import "./section-2-brands-dt-brands";
+
 .brands {
     display: none;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    justify-content: space-between;
 
     @include tablet {
-        padding-top: 3rem;
-        padding-bottom: 4rem;
         display: flex;
-        justify-content: space-between;
-
-        .logo-5, .logo-6 {
-            display: none;
-        }
     }
+
     @include desktop {
         padding-block: 6rem;
-    }
-
-    .border-logoipsum {
-        width: 196px;
-        height: 100px;
-    }
-    .logo-5, .logo-6 {
-        display: grid;
     }
 }

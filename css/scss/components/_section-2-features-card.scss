@@ -1,0 +1,28 @@
+@import "./section-2-features-card-header";
+@import "./section-2-features-card-content";
+
+.features-card {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-areas:
+    "features-card-header"
+    "features-card-content-1"
+    "features-card-content-2"
+    "features-card-content-3"
+    "features-card-content-4"
+    "features-card-content-5"
+    "features-card-content-6";
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "features-card-header features-card-header"
+        "features-card-content-1 features-card-content-2"
+        "features-card-content-3 features-card-content-4"
+        "features-card-content-5 features-card-content-6";
+    }
+
+    @include desktop {
+        gap: 3rem;
+    }
+}
