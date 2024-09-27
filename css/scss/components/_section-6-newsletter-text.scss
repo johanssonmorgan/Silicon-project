@@ -1,0 +1,23 @@
+.newsletter-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .newsletter-header {
+        display: block;
+    }
+    
+    .newsletter-header-desktop {
+        display: none;
+    }
+
+    @include desktop {
+        .newsletter-header {
+            display: none;
+        }
+        
+        .newsletter-header-desktop {
+            display: block;
+        }
+    }
+}

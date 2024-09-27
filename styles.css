@@ -1043,10 +1043,6 @@ footer {
         .faq-3-opened {display: flex;}
     }
 
-    .faq-bg {
-        background-color: var(--clr-SpWhite);
-    }
-
     .border-faq {
         padding-block: 1rem;
         padding-inline: 1.5rem;

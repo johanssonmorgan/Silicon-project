@@ -1,0 +1,66 @@
+@import "./section-6-faq-borders";
+
+.p6-faq-cont {
+    grid-area: p6-faq-cont;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5em;
+
+    .faq-1-closed {
+        display: none;
+    }
+
+    .faq-3-opened {
+        display: none;
+    }
+
+    @include tablet {
+        gap: 1rem;
+
+        .faq-1-closed {
+            display: flex;
+        }
+
+        .faq-1-opened {
+            display: none;
+        }
+
+        .faq-3-closed {
+            display: none;
+        }
+
+        .faq-3-opened {
+            display: flex;
+        }
+    }
+
+    @include desktop {
+        gap: 1rem;
+    }
+}
+
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@include mobile {
+
+    .faq-1-opened {
+        padding-block: 1rem;
+    }
+    
+    .faq-divider-top {
+        border-radius: 0;
+        border-top: 1px solid $GraySp-7;
+        padding-block: 1rem;
+    }
+}

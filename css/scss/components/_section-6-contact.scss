@@ -1,0 +1,46 @@
+.p6-contact {
+    grid-area: p6-contact;
+    display: flex;
+    justify-content: center;
+
+    .contact-phone {
+        display: none;
+    }
+    
+    .contact-text {
+        display: none;
+    }
+    
+    .contact-mobile {
+        display: flex;
+    }
+
+    @include tablet {
+        justify-content:flex-start;
+        gap: 1rem;
+
+        .btn {
+            padding-inline: 0;
+        }
+    
+        .contact-phone {
+            display: block;
+        }
+        
+        .contact-text {
+            display: block;
+        }
+        
+        .contact-mobile {
+            display: none;
+        }
+    }
+}
+
+.border-contact {
+    width: 100%;
+
+    @include desktop {
+        width: 12.25rem;
+    }
+}

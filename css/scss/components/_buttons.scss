@@ -17,6 +17,12 @@
     }
 }
 
+.btn-contact {
+    @include btn;
+    display: flex;
+    align-items: center;
+}
+
 .btn-app {
     @include btn;
     display: grid;

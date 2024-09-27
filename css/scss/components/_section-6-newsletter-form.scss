@@ -1,0 +1,47 @@
+.form-label {
+    display: none;
+    margin-bottom: .2rem;
+}
+
+.form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-icon {
+    position: absolute;
+    left: .8em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input {
+    width: 100%;
+    background-color: $White;
+    font-size: 1rem;
+    color: $Gray500;
+    font-weight: $fw-Regular;
+    padding: 1em;
+    padding-left: 2.8em;
+    border-radius: .5em 0 0 .5em;
+    border: 1px solid #aeaeae;
+
+    &::placeholder {
+        color: $Gray500;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: $dropshadow-primary;
+    }
+
+    &:focus ~ .btn-submit {
+        box-shadow: $dropshadow-primary;
+    }
+
+    @include desktop {
+        background-color: $SpWhite;
+    }
+}
