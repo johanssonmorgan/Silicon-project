@@ -1,0 +1,9 @@
+.section-3-images-desktop {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+}

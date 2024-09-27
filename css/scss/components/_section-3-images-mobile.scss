@@ -1,0 +1,8 @@
+.section-3-images-mobile {
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        display: none;
+    }
+}

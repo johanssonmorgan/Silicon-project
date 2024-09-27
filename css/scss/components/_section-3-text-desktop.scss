@@ -1,0 +1,7 @@
+.section-3-text-desktop {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}

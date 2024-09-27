@@ -1,0 +1,11 @@
+.section-3-images-tablet {
+    display: none;
+    @include tablet {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
