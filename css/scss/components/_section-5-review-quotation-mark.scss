@@ -1,0 +1,9 @@
+.quotation-mark {
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 2.75em;
+    aspect-ratio: 1;
+    background-color: $Primary;
+    border-radius: .375em;
+}

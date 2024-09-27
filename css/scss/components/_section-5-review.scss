@@ -1,0 +1,15 @@
+@import "./section-5-review-critics";
+
+.review-card {
+    width: 416px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 24px;
+    padding-bottom: 24px;
+    padding-top: 48px;
+    padding-inline: 24px;
+    flex-direction: column;
+    border-radius: .5em;
+}

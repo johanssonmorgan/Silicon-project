@@ -1,0 +1,28 @@
+@import "./section-5-review";
+@import "./section-5-review-quotation-mark";
+
+.review-container {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-template-rows: 1.75rem 1rem minmax(19.5rem, auto);
+}
+
+#quotation-left {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+#card-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#quotation-right {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+#card-right {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}

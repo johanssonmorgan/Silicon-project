@@ -660,7 +660,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.p5-card {
+.section-5-review-card {
     width: 416px;
     height: fit-content;
     display: grid;

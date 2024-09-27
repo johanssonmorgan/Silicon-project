@@ -1,0 +1,24 @@
+.albert-avatar {grid-area: albert-avatar;}
+.albert-name {grid-area: albert-name;}
+.albert-title {grid-area: albert-title;}
+.fannie-avatar {grid-area: fannie-avatar;}
+.fannie-name {grid-area: fannie-name;}
+.fannie-title {grid-area: fannie-title;}
+
+.fannie {
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "fannie-avatar fannie-name"
+    "fannie-avatar fannie-title";
+}
+
+.albert {
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "albert-avatar albert-name"
+    "albert-avatar albert-title";
+}

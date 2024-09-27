@@ -1,0 +1,17 @@
+@import "./section-5-review-container";
+
+#section-5 {
+    background-color: $Gray100;
+}
+
+.section-5 {
+    display: none;
+
+    @include desktop {
+        padding-inline: .75rem;
+        padding-block: 5rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
