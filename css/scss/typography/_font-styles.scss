@@ -3,17 +3,17 @@
     color: $GraySp-11;
     
     @include desktop {
-        color: $GraySp-3;
+        color: var(--clr-GraySp-3);
     }
 }
 
 .fs-2 {
     @include text-small-regular;
-    color: $GraySp-9;
+    color: var(--clr-GraySp-9);
     line-height: 1.5;
     
     @include tablet {
-        color: $GraySp-10;
+        color: var(--clr-GraySp-10);
     }
 }
 
@@ -22,13 +22,13 @@
     color: $GraySp-6;
     
     @include desktop {
-        color: $GraySp-10;
+        color: var(--clr-GraySp-10);
     }
 }
 
 .fs-4 {
     @include text-small-regular;
-    color: $GraySp-9;
+    color: var(--clr-GraySp-9);
 }
 
 .fs-5 {
@@ -53,7 +53,7 @@
     color: $GraySp-1;
     
     @include desktop {
-        color: $Gray700;
+        color: var(--clr-Gray700);
     }
 }
 
@@ -62,31 +62,31 @@
     color: $GraySp-1;
     
     @include desktop {
-        color: $GraySp-10;
+        color: var(--clr-GraySp-10);
     }
 }
 
 .fs-10 {
     @include text-medium-regular;
-    color: $GraySp-9;
+    color: var(--clr-GraySp-9);
 
     @include desktop {
-        color: $GraySp-10;
+        color: var(--clr-GraySp-10);
     }
 }
 
 .fs-11 {
     @include text-medium-semibold;
-    color: $GraySp-2;
+    color: var(--clr-GraySp-2);
     
     @include tablet {
-        color: $Gray900;
+        color: var(--clr-Gray900);
     }
 }
 
 .fs-12 {
     @include text-medium-semibold;
-    color: $dm-label;
+    color: var(--clr-dm-label);
     
     @include desktop {
         color: $dm-label-dt;
@@ -95,7 +95,7 @@
 
 .fs-13 {
     @include text-medium-semibold;
-    color: $Gray800;
+    color: var(--clr-Gray800);
     
     &:hover {
         color: $Primary;
@@ -104,20 +104,20 @@
 
 .fs-14 {
     @include text-medium-bold;
-    color: $Gray900;
+    color: var(--clr-Gray900);
 }
 
 .fs-15 {
     @include text-large;
-    color: $GraySp-10;
+    color: var(--clr-GraySp-10);
 }
 
 .fs-16 {
     @include text-large;
-    color: $GraySp-9;
+    color: var(--clr-GraySp-9);
     
     @include desktop {
-        color: $Gray600;
+        color: var(--clr-Gray600);
     }
 }
 
@@ -130,19 +130,19 @@
     }
 
     @include desktop {
-        color: $GraySp-10;
+        color: var(--clr-GraySp-10);
     }
 }
 
 .fs-18 {
     @include text-large;
-    color: $GraySp-8;
+    color: var(--clr-GraySp-8);
 
     @include tablet {
         color: $GraySp-1;
     }
 
     @include desktop {
-        color: $GraySp-10;
+        color: var(--clr-GraySp-10);
     }
 }

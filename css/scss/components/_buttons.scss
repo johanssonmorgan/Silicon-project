@@ -28,48 +28,72 @@
     display: grid;
     place-items: center;
     width: 100%;
-    background-color: $GraySp-4;
+    background-color: var(--clr-GraySp-4);
     border-radius: .5em;
     padding: .5em 1.5625em;
     z-index: 1;
-    @include color-adjustments-bg($GraySp-4);
-    @include desktop {
-        background-color: $GraySp-5;
-        @include color-adjustments-bg($GraySp-5);
+
+    &:hover {
+        background-color: var(--clr-GraySp-4-hover);
+        
+        @include desktop {
+            background-color: var(--clr-GraySp-5-hover);
+        }
     }
-}
 
-.btn-submit {
-    @include btn;
-    background-color: $Primary;
-    color: $White;
-    padding: 1em;
-    border-radius: 0 .5em .5em 0;
-    font-size: 1rem;
-    border: 1px solid $Primary;
-    @include color-adjustments-bg($Primary)
-}
+    &:active {
+            background-color: var(--clr-GraySp-4-active);
+            
+        @include desktop {
+            background-color: var(--clr-GraySp-5-active);
+        }
+    }
+    }
 
-.btn-discover {
-    @include btn-circle-large;
-    background-color: $SpWhite;
-    @include color-adjustments-bg($SpWhite)
-}
+    .btn-submit {
+        @include btn;
+        background-color: $Primary;
+        color: $White;
+        padding: 1em;
+        border-radius: 0 .5em .5em 0;
+        font-size: 1rem;
+        border: 1px solid $Primary;
+        @include color-adjustments-bg($Primary)
+    }
 
-.btn-open {
-    @include btn-circle-small;
-    background-color: $Gray100;
-    @include color-adjustments-bg($Gray100);
-}
+    .btn-discover {
+        @include btn-circle-large;
+        background-color: var(--clr-SpWhite);
 
-.btn-close {
-    @include btn-circle-small;
-    background-color: $Primary;
-    @include color-adjustments-bg($Primary);
-}
+        &:hover {
+            background-color: var(--clr-SpWhite-hover);
+        }
 
+        &:active {
+            background-color: var(--clr-SpWhite-active);
+        }
+    }
 
-// Dark Mode Toggle - Used the code provided by Hans in one of his Tips & Trix videos - I made adjustments to the code to better fit my overall layout
+    .btn-open {
+        @include btn-circle-small;
+        background-color: var(--clr-Gray100);
+
+        &:hover {
+            background-color: var(--clr-Gray100-hover);
+        }
+
+        &:active {
+            background-color: var(--clr-Gray100-active);
+        }
+    }
+
+    .btn-close {
+        @include btn-circle-small;
+        background-color: $Primary;
+        @include color-adjustments-bg($Primary);
+    }
+
+    // Dark Mode Toggle - Used the code provided by Hans in one of his Tips & Trix videos - I made adjustments to the code to better fit my overall layout
 
 .btn-toggle-switch {
     display: flex;

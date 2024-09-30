@@ -1,35 +1,43 @@
-.dark {
+:root.dark {
     color-scheme: dark;
 
-    $Gray100: #ffffff0a;
-    $Gray500: #ffffff66;
-    $Gray600: #ffffff80;
-    $Gray700: #ffffff;
-    $Gray800: #ffffffd9;
-    $Gray900: #ffffff;
-    $SpWhite: #ffffff0a;
-    $dm-label: #565973;
-    $GraySp-2: #ffffff;
-    $GraySp-3: #ffffff80;
-    $GraySp-4: #eff2fC;
-    $GraySp-5: #f3f6ff;
-    $GraySp-7: #ffffff26;
-    $GraySp-8: #ffffff;
-    $GraySp-9: #ffffffb3;
-    $GraySp-10: #ffffffb3;
-    $bg: #0B0f19;
-    $mb-faq-bg: #131022;
+    --clr-Gray100: #{$Gray100-dark};
+    --clr-Gray100-active: #{$Gray100-dark-active};
+    --clr-Gray100-hover: #{$Gray100-dark-hover};
+    --clr-Gray500: #{$Gray500-dark};
+    --clr-Gray600: #{$Gray600-dark};
+    --clr-Gray700: #{$Gray700-dark};
+    --clr-Gray800: #{$Gray800-dark};
+    --clr-Gray900: #{$Gray900-dark};
+    --clr-SpWhite: #{$SpWhite-dark};
+    --clr-SpWhite-active: #{$SpWhite-dark-active};
+    --clr-SpWhite-hover: #{$SpWhite-dark-hover};
+    --clr-dm-label: #{$dm-label-dark};
+    --clr-GraySp-2: #{$GraySp-2-dark};
+    --clr-GraySp-3: #{$GraySp-3-dark};
+    --clr-GraySp-4: #{$GraySp-4-dark};
+    --clr-GraySp-4-active: #{$GraySp-4-dark-active};
+    --clr-GraySp-4-hover: #{$GraySp-4-dark-hover};
+    --clr-GraySp-5: #{$GraySp-5-dark};
+    --clr-GraySp-5-active: #{$GraySp-5-dark-active};
+    --clr-GraySp-5-hover: #{$GraySp-5-dark-hover};
+    --clr-GraySp-7: #{$GraySp-7-dark};
+    --clr-GraySp-8: #{$GraySp-8-dark};
+    --clr-GraySp-9: #{$GraySp-9-dark};
+    --clr-GraySp-10: #{$GraySp-10-dark};
+    --clr-bg: #{$bg-dark};
+    --clr-mb-faq-bg: #{$mb-faq-bg-dark};
 
     .silicon-icon {
-        content: url(/images/dm-Silicon-logotype.svg);}
+        content: url(images/dm-Silicon-logotype.svg);}
     .appstore-icon {
-        content: url(/images/dm-appstore.svg);}
+        content: url(images/dm-appstore.svg);}
     .googleplay-icon {
-        content: url(/images/dm-googleplay.svg);}
+        content: url(images/dm-googleplay.svg);}
     .show-more-icon {
-        content: url(/images/dm-show-more-icon.svg);}
+        content: url(images/dm-show-more-icon.svg);}
     .next-icon {
-        content: url(/images/dm-next-btn.svg);}
+        content: url(images/dm-next-btn.svg);}
     .mobile-icon {
-        content: url(/images/dm-mobile-menu-button.svg);}
+        content: url(images/dm-mobile-menu-button.svg);}
 }

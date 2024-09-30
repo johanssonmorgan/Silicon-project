@@ -22,9 +22,9 @@ body {
     }
 
 main {
-    background-color: $bg;
+    background-color: var(--clr-bg);
 }
 
 footer {
-    background-color: $bg;
+    background-color: var(--clr-bg);
 }

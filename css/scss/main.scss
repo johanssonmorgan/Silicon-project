@@ -1,4 +1,6 @@
 @import "./misc/variables";
+@import "./colors/themes/colors";
+@import "./colors/themes/dark-theme";
 @import "./mixins/mixins";
 @import "./misc/utility-classes";
 @import "./misc/base";
@@ -7,7 +9,6 @@
 @import "./typography/font-styles";
 @import "./misc/handle_images";
 @import "./components/buttons";
-@import "./colors/themes/dark-theme";
 @import "./components/navbar-layout";
 @import "./components/section-1-layout";
 @import "./components/section-2-layout";
@@ -15,3 +16,4 @@
 @import "./components/section-4-layout";
 @import "./components/section-5-layout";
 @import "./components/section-6-layout";
+@import "./components/footer_copyright-layout";

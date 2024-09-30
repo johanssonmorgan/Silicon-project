@@ -4,7 +4,7 @@
 }
 
 @mixin headers {
-    color: $GraySp-2;
+    color: var(--clr-GraySp-2);
     font-weight: $fw-ExtraBold;
 }
 

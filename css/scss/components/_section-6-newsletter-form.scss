@@ -21,7 +21,7 @@
     width: 100%;
     background-color: $White;
     font-size: 1rem;
-    color: $Gray500;
+    color: var(--clr-Gray500);
     font-weight: $fw-Regular;
     padding: 1em;
     padding-left: 2.8em;
@@ -29,7 +29,7 @@
     border: 1px solid #aeaeae;
 
     &::placeholder {
-        color: $Gray500;
+        color: var(--clr-Gray500);
     }
 
     &:focus {
@@ -42,6 +42,6 @@
     }
 
     @include desktop {
-        background-color: $SpWhite;
+        background-color: var(--clr-SpWhite);
     }
 }

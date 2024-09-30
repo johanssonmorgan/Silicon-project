@@ -10,7 +10,7 @@ h1 {
     }
 
     @include desktop {
-        color: $Gray900;
+        color: var(--clr-Gray900);
         font-size: 3.5rem;
     }
 }
@@ -23,7 +23,7 @@ h2 {
     }
 
     @include desktop {
-        color: $Gray900;
+        color: var(--clr-Gray900);
         font-size: 2.5rem;
     }
 }
@@ -32,7 +32,7 @@ h3 {
     font-size: 1.5rem;
 
     @include tablet {
-        color: $Gray900;
+        color: var(--clr-Gray900);
         font-size: 2rem;
     }
 }
@@ -45,7 +45,7 @@ h4 {
     }
 
     @include desktop {
-        color: $Gray900;
+        color: var(--clr-Gray900);
         font-size: 1.5rem;
     }
 }
@@ -54,6 +54,6 @@ h5 {
     font-size: 1.25rem;
 
     @include desktop {
-        color: $Gray900;
+        color: var(--clr-Gray900);
     }
 }

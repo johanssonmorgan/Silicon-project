@@ -88,13 +88,13 @@
     width: 90%;
 }
 .bg-white {
-    background-color: $SpWhite;
+    background-color: var(--clr-SpWhite);
 }
 .dropshadow{
     box-shadow: $dropshadow-primary;
 }
 .border-contact {
-    border: 1px solid $GraySp-7;
+    border: 1px solid var(--clr-GraySp-7);
     padding: 1.5rem;
     width: 12.25rem;
     height: fit-content;

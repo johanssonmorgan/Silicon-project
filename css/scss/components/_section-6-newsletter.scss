@@ -2,7 +2,7 @@
 @import "./section-6-newsletter-form";
 
 .newsletter {
-    background-color: $Gray100;
+    background-color: var(--clr-Gray100);
     grid-area: newsletter;
     display: grid;
     align-items: center;
