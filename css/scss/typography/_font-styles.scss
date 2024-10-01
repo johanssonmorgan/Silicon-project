@@ -146,3 +146,63 @@
         color: var(--clr-GraySp-10);
     }
 }
+
+.h1, .h2, .h3, .h4, .h5 {
+    @include headers
+}
+
+.h1 {
+    font-size: 2.125rem;
+
+    @include tablet {
+        font-size: 2.75rem;
+    }
+
+    @include desktop {
+        color: var(--clr-Gray900);
+        font-size: 3.5rem;
+    }
+}
+    
+.h2 {
+    font-size: 1.75rem;
+
+    @include tablet {
+        font-size: 2.125rem;
+    }
+
+    @include desktop {
+        color: var(--clr-Gray900);
+        font-size: 2.5rem;
+    }
+}
+
+.h3 {
+    font-size: 1.5rem;
+
+    @include tablet {
+        color: var(--clr-Gray900);
+        font-size: 2rem;
+    }
+}
+
+.h4 {
+    font-size: 1.35rem;
+
+    @include tablet {
+        font-size: 1.42rem;
+    }
+
+    @include desktop {
+        color: var(--clr-Gray900);
+        font-size: 1.5rem;
+    }
+}
+
+.h5 {
+    font-size: 1.25rem;
+
+    @include desktop {
+        color: var(--clr-Gray900);
+    }
+}

@@ -29,7 +29,7 @@
     border: 1px solid #aeaeae;
 
     &::placeholder {
-        color: var(--clr-Gray500);
+        color: $Gray500;
     }
 
     &:focus {

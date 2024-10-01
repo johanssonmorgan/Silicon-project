@@ -15,6 +15,11 @@
         display: flex;
     }
 
+    .btn-primary {
+        padding-block: 1em;
+        display: flex;
+    }
+
     @include tablet {
         justify-content:flex-start;
         gap: 1rem;

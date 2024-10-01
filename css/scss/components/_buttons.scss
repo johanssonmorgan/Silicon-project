@@ -9,17 +9,6 @@
     @include color-adjustments-bg($Primary);
 }
 
-.btn-contact-mobile {
-    @include btn;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $Primary;
-    border-radius: .25em;
-    padding: 1em 1.5625em;
-    @include color-adjustments-bg($Primary);
-}
-
 .btn-burger {
     @include btn;
 
