@@ -101,10 +101,8 @@
     gap: .75rem;
     
     .label {
-        display: none;
-
-        @include tablet {
-            display: block;
+        @include mobile {
+            @include sr-only
         }
     }
 }
