@@ -1,3 +1,5 @@
+// Functionality to toggle dark/light theme. Used the code provided by Joakim in his video "Avancerad - Darkmode toggle"
+
 const darkmodeSwitch = document.querySelector('#darkmode-switch')
 const hasDarkmode = localStorage.getItem('darkmode')
 

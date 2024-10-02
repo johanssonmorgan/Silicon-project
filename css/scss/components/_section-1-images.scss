@@ -16,7 +16,7 @@
             right: -45px;
             z-index: 0;
         }
-        .phone-behind{
+        .phone-background{
             height: 335px;
             width: 242px;
             aspect-ratio: 1;
@@ -25,7 +25,7 @@
             right: -58px;
             z-index: 0;
         }
-        .phone-front{
+        .phone-foreground{
             height: 420px;
             width: 242px;
             aspect-ratio: 1;
@@ -43,12 +43,12 @@
             height: auto;
             right: 75px;
         }
-        .phone-behind{
+        .phone-background{
             height: 548px;
             width: 402px;
             right: -85px;
         }
-        .phone-front{
+        .phone-foreground{
             width: 402px;
             height: 688px;
             right: -315px;

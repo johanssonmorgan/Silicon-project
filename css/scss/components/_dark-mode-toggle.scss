@@ -1,0 +1,63 @@
+    // Dark Mode Toggle - Used the code provided by Hans in his Tips & Trix video "Tips & Trix - Bygga upp din header med HTML & CSS" - I made adjustments to the code to better fit my overall layout
+
+    .btn-toggle-switch {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        
+        .label {
+            @include mobile {
+                @include sr-only
+            }
+        }
+    }
+    .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 25px;
+        
+        input {
+            opacity: 0;
+    
+            &:checked + .slider {
+                background-color: $Primary;
+            }
+    
+            &:focus + .slider {
+                box-shadow: $dropshadow-primary;
+            }
+    
+            &:checked + .slider::before{
+                transform: translateX(18px);
+                box-shadow: $dropshadow-primary;
+            }
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $Gray600;
+            transition: .2s;
+    
+            &::before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                bottom: 2.5px;
+                left: 3px;
+                background-color: $White;
+            }
+        }
+        .slider.round {
+            border-radius: 35px;
+    
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }

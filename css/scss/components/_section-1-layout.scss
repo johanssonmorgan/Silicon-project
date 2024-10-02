@@ -25,6 +25,7 @@
     }
 
     @include desktop {
+        
         gap: .5rem;
         padding-top: 112px;
         grid-template-columns: 1fr 1fr;
