@@ -44,6 +44,12 @@
 
 .border-contact {
     width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+
+    p {
+        width: 100%;
+    }
 
     @include desktop {
         width: 12.25rem;

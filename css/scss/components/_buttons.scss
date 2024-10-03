@@ -21,8 +21,9 @@
 
 .btn-contact {
     @include btn;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .btn-app {

@@ -8,7 +8,7 @@
     height: fit-content;
 
     @include tablet {
-        h3 {
+        h2 {
             width: 65%;
         }
         p {
@@ -17,7 +17,7 @@
     }
 
     @include desktop {
-        h3 {
+        h2 {
             width: 100%;
         }
         p {
