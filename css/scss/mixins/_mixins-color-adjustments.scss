@@ -1,5 +1,6 @@
 @mixin color-adjustments-bg($color) {
-    &:hover {
+    &:hover,
+    &:focus-visible {
         background-color: darken($color, 3%);
     }
     &:active {
@@ -8,7 +9,8 @@
 }
 
 @mixin color-adjustments-text($color) {
-    &:hover {
+    &:hover,
+    &:focus-visible {
         color: darken($color, 3%);
     }
     &:active {

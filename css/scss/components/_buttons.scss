@@ -36,7 +36,8 @@
     padding: .5em 1.5625em;
     z-index: 1;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         background-color: var(--clr-GraySp-4-hover);
         
         @include desktop {
@@ -68,7 +69,8 @@
         @include btn-circle-large;
         background-color: var(--clr-SpWhite);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             background-color: var(--clr-SpWhite-hover);
         }
 
@@ -81,7 +83,8 @@
         @include btn-circle-small;
         background-color: var(--clr-Gray100);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             background-color: var(--clr-Gray100-hover);
         }
 

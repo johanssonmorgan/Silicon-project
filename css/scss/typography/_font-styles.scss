@@ -97,7 +97,8 @@
     @include text-medium-semibold;
     color: var(--clr-Gray800);
     
-    &:hover {
+    &:hover,
+    &:focus-visible {
         color: $Primary;
     }
 }
