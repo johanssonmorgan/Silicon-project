@@ -1,6 +1,7 @@
     // Dark Mode Toggle - Used the code provided by Hans in his Tips & Trix video "Tips & Trix - Bygga upp din header med HTML & CSS" - I made adjustments to the code to better fit my overall layout
 
     .btn-toggle-switch {
+        grid-area: nav-toggle;
         display: flex;
         align-items: center;
         gap: .75rem;

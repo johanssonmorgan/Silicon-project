@@ -1,12 +1,17 @@
-@import "./navbar-features";
-@import "./navbar-sign-in";
+@import "./navbar-links";
 
 nav {
+
+    .nav-silicon-logo {grid-area: nav-logo;}
+    .nav-menu-button {grid-area: nav-menu;}
+    
     display: grid;
     align-items: center;
     grid-template-columns: 1fr auto auto;
     gap: 1.5rem;
     padding-block: 1rem;
+    grid-template-areas: 
+    "nav-logo nav-toggle nav-menu";
 
     @include tablet {
         gap: 3.7rem;
@@ -16,5 +21,7 @@ nav {
         grid-template-columns: auto 1fr auto auto;
         gap: 1.5rem;
         padding-block: 1rem;
+        grid-template-areas: 
+        "nav-logo nav-features nav-toggle nav-sign-in";
     }
 }
